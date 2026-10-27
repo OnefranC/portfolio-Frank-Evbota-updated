@@ -128,24 +128,6 @@ body {
   color: var(--fe-ink);
 }
 
-.fe-nav__cta {
-  display: inline-flex;
-  align-items: center;
-  padding: 12px 22px;
-  border-radius: 999px;
-  background: var(--fe-ink);
-  color: #fff !important;
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-
-.fe-nav__cta:hover {
-  opacity: 0.88;
-  color: #fff !important;
-}
-
 /* —— Header dark sticky overlay (homepage only, works with dark hero) —— */
 .fe-header--overlay {
   position: sticky;
@@ -169,18 +151,6 @@ body {
 .fe-header--overlay .fe-nav a.is-active {
   color: #fff;
 }
-.fe-header--overlay .fe-nav__cta {
-  background: rgba(0, 0, 0, 0.7);
-  border: 1.5px solid var(--fe-ink, #ffffff);
-  color: #ffffff;
-  padding: 8px 16px;
-  font-size: 14px;
-}
-.fe-header--overlay .fe-nav__cta:hover {
-  background: rgba(0, 0, 0, 0.9);
-  color: var(--fe-ink, #ffffff);
-  border-color: var(--fe-ink, #ffffff);
-}
 
 /* —— Header: consistently dark theme —— */
 
@@ -196,16 +166,6 @@ body {
 .fe-header--overlay .fe-nav a.is-active {
   color: #fff;
 }
-.fe-header--overlay .fe-nav__cta {
-  background: transparent;
-  border: 1px solid rgba(37, 55, 70, 0.28);
-  color: var(--fe-ink);
-}
-.fe-header--overlay .fe-nav__cta:hover {
-  background: rgba(37, 55, 70, 0.06);
-  color: var(--fe-ink);
-  border-color: rgba(37, 55, 70, 0.45);
-}
 .fe-header--overlay .fe-burger span {
   background: #fff;
 }
@@ -214,9 +174,6 @@ body {
 .fe-header--overlay .fe-logo,
 .fe-header--overlay .fe-nav a {
   transition: color 0.4s ease;
-}
-.fe-header--overlay .fe-nav__cta {
-  transition: background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease, opacity 0.4s ease;
 }
 .fe-header--overlay .fe-burger span {
   transition: background-color 0.4s ease;
@@ -294,10 +251,6 @@ body {
 
 .fe-burger.is-active span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
-}
-
-.fe-nav__cta::after {
-  display: none;
 }
 
 .fe-nav__close {
@@ -1195,11 +1148,6 @@ body {
   .fe-header--overlay .fe-nav.is-open a:active {
     background: rgba(255, 255, 255, 0.08);
   }
-  .fe-header--overlay .fe-nav.is-open .fe-nav__cta {
-    background: transparent !important;
-    border: 1px solid rgba(255, 255, 255, 0.5) !important;
-    color: #fff !important;
-  }
 
   .fe-nav.is-open.is-closing {
     animation: fe-menu-out 0.16s ease-in both;
@@ -1222,15 +1170,6 @@ body {
   .fe-nav.is-open a:active {
     background: var(--fe-soft);
     color: var(--fe-ink);
-  }
-
-  .fe-nav.is-open .fe-nav__cta {
-    justify-content: center;
-    padding: 9px 10px;
-    margin-top: 4px;
-    background: var(--fe-ink) !important;
-    color: #fff !important;
-    border: none !important;
   }
 }
 
@@ -1268,8 +1207,6 @@ body {
   .fe-btn--dark:hover,
   .fe-btn--ghost:hover,
   .fe-hero__content .fe-btn:hover,
-  .fe-nav__cta:hover,
-  .fe-nav__cta--secondary:hover,
   .fe-projects-cta .fe-btn:hover,
   .fe-footer a.fe-btn:hover,
   .fe-cta .fe-btn:hover,
@@ -4448,23 +4385,6 @@ main .fe-cta .fe-btn:hover {
   box-shadow: none !important;
 }
 
-/* Nav Download CV: visible press animation on click */
-.fe-nav__cta {
-  transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease !important;
-  cursor: pointer !important;
-  will-change: transform;
-}
-.fe-nav__cta:hover {
-  opacity: 0.88 !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 4px 12px rgba(37, 55, 70, 0.18) !important;
-}
-.fe-nav__cta:active {
-  transform: scale(0.96) !important;
-  opacity: 1 !important;
-  box-shadow: 0 1px 4px rgba(37, 55, 70, 0.12) !important;
-}
-
 /* CTA button: reserve border space so hover never shifts footer nav */
 .fe-cta .fe-btn,
 .fe-cta .fe-btn--dark,
@@ -4589,48 +4509,6 @@ main .fe-cta .fe-btn:hover {
 .fe-hero__content .fe-btn:hover {
   transform: translateY(-3px) !important;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.34) !important;
-}
-
-/* Nav CTAs: Download CV = primary solid pill, Contact me = secondary outline pill */
-.fe-nav__cta {
-  padding: 10px 18px !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  background: var(--fe-ink) !important;
-  color: #ffffff !important;
-  border: 1px solid var(--fe-ink) !important;
-  border-radius: 999px !important;
-  box-shadow: none !important;
-  letter-spacing: 0.03em !important;
-  transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease !important;
-}
-.fe-nav__cta:hover {
-  opacity: 1 !important;
-  background: var(--fe-ink) !important;
-  color: #ffffff !important;
-  border-color: var(--fe-ink) !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 6px 16px rgba(18, 21, 21, 0.22) !important;
-}
-.fe-nav__cta:active {
-  transform: scale(0.96) !important;
-  box-shadow: 0 1px 4px rgba(18, 21, 21, 0.15) !important;
-}
-.fe-nav__cta--secondary {
-  background: var(--fe-ink) !important;
-  color: #ffffff !important;
-  border: 1.5px solid var(--fe-line) !important;
-  font-weight: 500 !important;
-}
-.fe-nav__cta--secondary:hover {
-  background: var(--fe-ink) !important;
-  color: #ffffff !important;
-  border-color: var(--fe-line) !important;
-  transform: none !important;
-  box-shadow: none !important;
-}
-.fe-nav__cta--secondary:active {
-  transform: scale(0.96) !important;
 }
 
 /* Hero "View My work": loud dark-grey fill, white text */
