@@ -4084,6 +4084,7 @@ main .fe-cta .fe-btn {
     width: 100% !important;
     max-width: 100% !important;
     overflow: hidden !important;
+    padding: 20px 16px !important; /* fill container on narrow screens (360px min) */
   }
   .fe-service__num,
   .fe-service h3,
