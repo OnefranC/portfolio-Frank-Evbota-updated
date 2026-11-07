@@ -267,6 +267,12 @@ body {
   align-items: center;
 }
 
+@media (min-width: 961px) {
+  .fe-hero {
+    min-height: min(88vh, 844px);
+  }
+}
+
 .fe-hero__bg {
   position: absolute;
   inset: 0;
@@ -280,6 +286,34 @@ body {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+/* —— Hero photo (right side, soft blend into background) —— */
+.fe-hero__photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 47%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  opacity: 0.9;
+  -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(0, 0, 0, 0.55) 28%,
+      #000 62%
+    ),
+    linear-gradient(to bottom, transparent 0%, #000 14%, #000 86%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(0, 0, 0, 0.55) 28%,
+      #000 62%
+    ),
+    linear-gradient(to bottom, transparent 0%, #000 14%, #000 86%, transparent 100%);
+  mask-composite: intersect;
 }
 
 .fe-hero__content {
@@ -360,6 +394,28 @@ body {
   justify-content: center;
 }
 
+/* Submit button states: inactive until a form field is focused */
+.fe-form .fe-btn--dark.is-inactive {
+  background: #c9ced1;
+  color: #6b7275;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.fe-form .fe-btn--dark.is-inactive:hover {
+  background: #c9ced1;
+  color: #6b7275;
+  transform: none;
+  box-shadow: none;
+}
+
+.fe-form .fe-btn--dark.is-active {
+  background: var(--fe-ink);
+  color: #fff;
+  cursor: pointer;
+}
+
 .fe-btn--ghost {
   background: transparent;
   border: 1.5px solid var(--fe-line);
@@ -437,7 +493,7 @@ body {
   border-radius: var(--fe-radius);
   overflow: hidden;
   aspect-ratio: 4 / 3;
-  background: var(--fe-soft);
+  background: #16191a;
 }
 
 .fe-about__media img {
@@ -449,7 +505,7 @@ body {
 .fe-about__body p {
   font-size: 17px;
   line-height: 1.65;
-  color: var(--fe-muted);
+  color: #b8bfc0;
   margin: 0 0 16px;
 }
 
@@ -463,9 +519,9 @@ body {
 .fe-stat {
   flex: 1 1 140px;
   padding: 20px 18px;
-  border: 1px solid var(--fe-line);
+  border: 1px solid #2a2f30;
   border-radius: 14px;
-  background: var(--fe-white);
+  background: #16191a;
 }
 
 .fe-stat strong {
@@ -479,19 +535,33 @@ body {
 
 .fe-stat span {
   font-size: 13px;
-  color: var(--fe-muted);
+  color: #b8bfc0;
   font-weight: 500;
 }
 
-/* —— Services —— */
-.fe-services {
+
+/* Dark band: About now owns the dark surface (What I do went light). */
+.fe-about-section {
   background: #0e1112;
   color: #fff;
+}
+
+.fe-about-section .fe-section__label {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.fe-about-section .fe-section__title {
+  color: #fff;
+}
+/* —— Services —— */
+.fe-services {
+  background: #ffffff;
+  color: var(--fe-ink);
   height: auto; /* fit content — avoid padding-driven section bloat */
 }
 
 .fe-services .fe-section__label {
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--fe-muted);
   /* Block-level here so the gap above is the exact measured distance from
      the marquee to the chip, with no baseline leading. width: fit-content
      keeps the chip box tight to its text instead of the full column. */
@@ -500,29 +570,46 @@ body {
 }
 
 .fe-services .fe-section__title {
-  color: #fff;
+  color: var(--fe-ink);
 }
 
 .fe-services .fe-section__lead {
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--fe-muted);
+}
+
+/* Full-bleed "What I do" content on wide screens: .fe-section defaults to a
+   centred 1200px column, which leaves empty space on the left and right of the
+   light .fe-services band. Drop the max-width centering so the label/title/lead
+   spans the full band width (160px sides, matching the service list below). */
+@media (min-width: 1200px) {
+  .fe-services .fe-section {
+    max-width: none !important;
+    width: 100% !important;
+    padding-left: 140px !important;
+    padding-right: 140px !important;
+    margin: 0px 0px !important;
+    box-sizing: border-box !important;
+  }
 }
 
 .fe-services__list {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px 60px; /* reduced bottom padding to fit content */
+  width: 100%;
+  padding: 24px 160px 80px; /* full width with 160px left/right breathing room */
+  box-sizing: border-box;
 }
 
 .fe-service {
+  width: 100%;
   display: grid;
   grid-template-columns: 64px 1fr auto;
   gap: 24px;
   align-items: start;
-  padding: 36px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 36px 120px;
+  border-top: 1px solid var(--fe-line);
   text-decoration: none;
-  color: #fff;
+  color: var(--fe-ink);
   transition: opacity 0.2s ease, background-color 0.2s ease, padding-left 0.25s ease;
+  box-sizing: border-box;
 }
 
 .fe-service > div:nth-child(2) {
@@ -541,13 +628,13 @@ body {
 }
 
 .fe-service:last-child {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid var(--fe-line);
 }
 
 .fe-service:hover {
-  color: #fff;
+  color: var(--fe-ink);
   opacity: 1;
-  background: rgba(255, 255, 255, 0.045);
+  background: var(--fe-soft);
   padding-left: 12px;
 }
 
@@ -555,7 +642,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.08em;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(0, 0, 0, 0.45);
 }
 
 .fe-service h3 {
@@ -564,12 +651,12 @@ body {
   font-weight: 600;
   margin: 0 0 10px;
   letter-spacing: -0.02em;
-  color: #ffffff;
+  color: var(--fe-ink);
 }
 
 .fe-service p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--fe-muted);
   font-size: 15px;
   width: 100%; /* full-width text block */
   max-width: none;
@@ -586,13 +673,13 @@ body {
 }
 
 .fe-service__tags span {
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(0, 0, 0, 0.22);
   border-radius: 999px;
   padding: 8px 14px;
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /* —— Marquee —— */
@@ -4016,8 +4103,8 @@ main .fe-cta .fe-btn {
     max-width: 100% !important;
   }
   .fe-services__list {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
     overflow-x: hidden !important;
   }
 }
@@ -4442,7 +4529,7 @@ main .fe-cta .fe-btn:hover {
 /* ===== Hero on tablet/mobile: fill bg, no black strip, center-left copy ===== */
 @media (max-width: 960px) {
   .fe-hero {
-    min-height: min(72vh, 620px) !important;
+    min-height: 100vh !important;
     padding: 0 !important;
     align-items: center !important;
     overflow: hidden !important;
@@ -4456,6 +4543,13 @@ main .fe-cta .fe-btn:hover {
     object-fit: cover !important;
     object-position: center !important;
     max-width: none !important;
+  }
+  .fe-hero__bg img.fe-hero__photo {
+    width: 61% !important;
+    right: 0 !important;
+    left: auto !important;
+    object-position: center top !important;
+    opacity: 0.75 !important;
   }
   .fe-hero__content {
     margin-left: 0 !important;
@@ -6016,7 +6110,7 @@ main > .fe-rhythm.fe-rhythm.fe-rhythm .fe-hero__content {
    The services banner and the "What I do" section are one block, at every
    width. No gap between them.
 
-   They already share the same background (#0e1112), so visually they are
+   They now sit on different backgrounds (marquee dark, services light), so visually they are
    one band; the only thing that ever separated them was the section margin
    on .fe-services. Three separate rules were zeroing it, each in its own
    media query:
@@ -7159,7 +7253,7 @@ main > .fe-about-section .fe-about {
 
 .fe-service:hover .fe-service__num {
   transform: translateZ(22px);
-  color: #fff;
+  color: var(--fe-ink);
 }
 
 /* ==========================================================================
