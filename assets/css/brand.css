@@ -1163,11 +1163,15 @@ body {
     grid-template-columns: 1fr;
   }
 
-  /* Stacked on tablet/mobile: portrait aspect so the about image keeps a
-     proper height instead of collapsing to a short strip at full width. */
+  /* Stacked on tablet/mobile: let .fe-about__media wrap the image at its
+     natural height and width so the background fits the image exactly. */
   .fe-about__media {
-    aspect-ratio: 3 / 4;
-    min-height: 300px;
+    width: 100%;
+    min-height: 240px;
+  }
+
+  .fe-about__media img {
+    height: auto;
   }
 
   .fe-projects-grid,
