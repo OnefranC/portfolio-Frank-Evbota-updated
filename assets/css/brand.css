@@ -1163,15 +1163,16 @@ body {
     grid-template-columns: 1fr;
   }
 
-  /* Stacked on tablet/mobile: let .fe-about__media wrap the image at its
-     natural height and width so the background fits the image exactly. */
+  /* Stacked on tablet/mobile: image fills its container edge to edge. */
   .fe-about__media {
     width: 100%;
-    min-height: 240px;
+    min-height: 350px;
   }
 
   .fe-about__media img {
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .fe-projects-grid,
