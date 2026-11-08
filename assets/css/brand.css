@@ -1163,10 +1163,14 @@ body {
     grid-template-columns: 1fr;
   }
 
-  /* Stacked on tablet/mobile: image fills its container width and height. */
+  /* Stacked on tablet/mobile: image card fills width, scales height by
+     ratio so it resizes properly across breakpoints, with 20px rounded
+     corners. object-fit cover fills width and height of the card. */
   .fe-about__media {
     width: 100%;
-    height: 350px;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--fe-radius);
+    overflow: hidden;
   }
 
   .fe-about__media img {
