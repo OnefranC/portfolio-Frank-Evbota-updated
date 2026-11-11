@@ -119,7 +119,8 @@ body {
   transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.fe-nav a:hover::after {
+.fe-nav a:hover::after,
+.fe-nav a.is-active::after {
   transform: scaleX(1);
 }
 
