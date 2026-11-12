@@ -5048,6 +5048,9 @@ main .fe-cta .fe-btn:hover {
     padding-right: 16px !important;
     box-sizing: border-box !important;
   }
+  .fe-services__list {
+    padding-top: 32px !important;
+  }
 
   /* Projects page: lead paragraph carries its own 16px gutter through the
      hero, so the cards section must not add a second one — otherwise the
