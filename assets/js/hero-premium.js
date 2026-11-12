@@ -90,15 +90,22 @@
 
       if (animateType === "up") {
         from = { y: 40, scale: 0.985, opacity: 0 };
+        to.y = 0;
+        to.scale = 1;
       } else if (animateType === "down") {
         from = { y: -40, scale: 0.985, opacity: 0 };
+        to.y = 0;
+        to.scale = 1;
       } else if (animateType === "fade") {
         from = { opacity: 0, filter: "blur(8px)" };
         to.filter = "blur(0px)";
       } else if (animateType === "scale") {
         from = { scale: 0.92, opacity: 0 };
+        to.scale = 1;
       } else {
         from = { y: 34, scale: 0.985, opacity: 0 };
+        to.y = 0;
+        to.scale = 1;
       }
 
       gsap.fromTo(

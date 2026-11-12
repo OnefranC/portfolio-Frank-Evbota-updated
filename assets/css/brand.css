@@ -261,7 +261,7 @@ body {
 /* —— Hero —— */
 .fe-hero {
   position: relative;
-  min-height: min(88vh, 820px);
+  min-height: min(calc(88vh + 8px), 828px);
   overflow: hidden;
   background: #07080c;
   display: flex;
@@ -270,7 +270,7 @@ body {
 
 @media (min-width: 961px) {
   .fe-hero {
-    min-height: min(88vh, 844px);
+    min-height: min(calc(88vh + 24px), 868px);
   }
 }
 
@@ -557,7 +557,8 @@ body {
 .fe-services {
   background: #ffffff;
   color: var(--fe-ink);
-  height: auto; /* fit content — avoid padding-driven section bloat */
+  height: auto;
+  padding-bottom: 120px;
 }
 
 .fe-services .fe-section__label {
@@ -585,16 +586,31 @@ body {
   .fe-services .fe-section {
     max-width: none !important;
     width: 100% !important;
-    padding-left: 140px !important;
-    padding-right: 140px !important;
+    padding-left: 120px !important;
+    padding-right: 120px !important;
     margin: 0px 0px !important;
     box-sizing: border-box !important;
   }
 }
 
+/* What I do — min desktop: fill width, obey page left/right margins */
+@media (min-width: 961px) {
+  main > .fe-services {
+    width: 100% !important;
+    max-width: none !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    box-sizing: border-box !important;
+  }
+  .fe-services__list {
+    padding-left: 120px !important;
+    padding-right: 120px !important;
+  }
+}
+
 .fe-services__list {
   width: 100%;
-  padding: 24px 160px 80px; /* full width with 160px left/right breathing room */
+  padding: 16px 0px 0px; /* full width with 0px left/right breathing room */
   box-sizing: border-box;
 }
 
@@ -604,7 +620,7 @@ body {
   grid-template-columns: 64px 1fr auto;
   gap: 24px;
   align-items: start;
-  padding: 36px 120px;
+  padding: 16px 100px;
   border-top: 1px solid var(--fe-line);
   text-decoration: none;
   color: var(--fe-ink);
@@ -635,7 +651,7 @@ body {
   color: var(--fe-ink);
   opacity: 1;
   background: var(--fe-soft);
-  padding-left: 12px;
+  padding-left: 100px;
 }
 
 .fe-service__num {
@@ -739,7 +755,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   gap: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 36px;
 }
 
 .fe-project h3 {
@@ -6493,13 +6509,13 @@ main > .fe-rhythm.fe-rhythm.fe-rhythm .fe-hero__content {
 }
 
 /* ==========================================================================
-   Contact page: 344px page margin on desktop.
+   Contact page: 160px page side margins on desktop.
    Content sits at the centre column; the rhythm gutter is replaced here.
    ========================================================================== */
 @media (min-width: 961px) {
-  main > .fe-contact.fe-rhythm.fe-rhythm.fe-rhythm {
-    padding-left: 344px !important;
-    padding-right: 344px !important;
+  main > .fe-rhythm.fe-rhythm.fe-rhythm.fe-contact {
+    padding-left: 160px !important;
+    padding-right: 160px !important;
   }
 }
 
@@ -6971,9 +6987,9 @@ main > header.fe-case-hero.fe-rhythm + .fe-rhythm {
     padding-left: 64px !important;
     padding-right: 64px !important;
   }
-  main > .fe-contact.fe-rhythm.fe-rhythm.fe-rhythm {
-    padding-left: 96px !important;
-    padding-right: 96px !important;
+  main > .fe-rhythm.fe-rhythm.fe-rhythm.fe-contact {
+    padding-left: 160px !important;
+    padding-right: 160px !important;
   }
   /* Retro: narrower label column + gap so copy keeps ~350px+. */
   .fe-retro__content {
@@ -7336,9 +7352,9 @@ main > .fe-about-section .fe-about {
   }
 }
 
-/* Override contact section's 344px padding to use 160px page margins */
+/* Contact section: 160px page side margins on desktop */
 @media (min-width: 961px) {
-  main > .fe-contact.fe-rhythm.fe-rhythm.fe-rhythm {
+  main > .fe-rhythm.fe-rhythm.fe-rhythm.fe-contact {
     padding-left: 160px !important;
     padding-right: 160px !important;
   }
@@ -7386,6 +7402,6 @@ main > .fe-about-section .fe-about {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: clamp(32px, 5vw, 64px);
+    padding-left: 0;
   }
 }
