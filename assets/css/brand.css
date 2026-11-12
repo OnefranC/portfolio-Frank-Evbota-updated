@@ -4582,7 +4582,9 @@ main .fe-cta .fe-btn:hover {
     right: 0 !important;
     left: auto !important;
     object-position: center top !important;
-    opacity: 0.75 !important;
+    opacity: 1 !important;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
   }
   .fe-hero__content {
     margin-left: 0 !important;
