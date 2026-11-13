@@ -274,6 +274,13 @@ body {
   }
 }
 
+/* Mobile: fixed 600px hero */
+@media (max-width: 960px) {
+  .fe-hero {
+    min-height: 600px;
+  }
+}
+
 .fe-hero__bg {
   position: absolute;
   inset: 0;
@@ -4526,29 +4533,37 @@ main .fe-cta .fe-btn:hover {
 @media (max-width: 960px) {
   .fe-hero {
     align-items: center !important;
-    min-height: min(70vh, 640px) !important;
+    min-height: max(600px, 100vh) !important;
+    max-height: auto !important;
   }
-  .fe-hero__content {
+  main > .fe-rhythm.fe-rhythm.fe-rhythm .fe-hero__content.fe-hero__content {
     margin-left: 0 !important;
     margin-right: auto !important;
     text-align: left !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-    max-width: 100% !important;
-    width: 100% !important;
+    padding-left: 48px !important;
+    padding-right: 24px !important;
+    max-width: 672px !important;
+    width: fit-content !important;
     box-sizing: border-box !important;
   }
   .fe-hero h1 {
-    font-size: clamp(32px, 8vw, 56px) !important;
+    font-size: clamp(32px, 8vw, 52px) !important;
     line-height: 1.1 !important;
     margin-bottom: 16px !important;
     overflow-wrap: break-word !important;
   }
   .fe-hero__lead {
     font-size: clamp(16px, 2.8vw, 22px) !important;
-    line-height: 1.45 !important;
-    max-width: 100% !important;
+    line-height: 1.4 !important;
+    max-width: 600px !important;
+    width: 600px !important;
     margin-bottom: 24px !important;
+    text-align: left !important;
+    text-align-last: left !important;
+    text-justify: auto !important;
+    hyphens: none !important;
+    word-spacing: normal !important;
+    letter-spacing: normal !important;
   }
   .fe-hero__content .fe-btn {
     display: inline-flex !important;
@@ -4562,7 +4577,8 @@ main .fe-cta .fe-btn:hover {
 /* ===== Hero on tablet/mobile: fill bg, no black strip, center-left copy ===== */
 @media (max-width: 960px) {
   .fe-hero {
-    min-height: calc(100vh + 240px) !important;
+    min-height: max(600px, 100vh) !important;
+    max-height: auto !important;
     padding: 0 !important;
     align-items: center !important;
     overflow: hidden !important;
@@ -4578,33 +4594,41 @@ main .fe-cta .fe-btn:hover {
     max-width: none !important;
   }
   .fe-hero__bg img.fe-hero__photo {
-    width: 61% !important;
-    right: 0 !important;
-    left: auto !important;
+    width: 100% !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
     object-position: center top !important;
-    opacity: 0.75 !important;
-    -webkit-mask-image: none !important;
-    mask-image: none !important;
+    opacity: 0.5 !important;
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%) !important;
+    mask-image: linear-gradient(to left, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%) !important;
   }
-  .fe-hero__content {
+  main > .fe-rhythm.fe-rhythm.fe-rhythm .fe-hero__content.fe-hero__content {
     margin-left: 0 !important;
     margin-right: auto !important;
     text-align: left !important;
-    padding: 48px 24px !important;
-    max-width: 100% !important;
-    width: 100% !important;
+    padding-left: 48px !important;
+    max-width: 672px !important;
+    width: fit-content !important;
     box-sizing: border-box !important;
   }
   .fe-hero h1 {
-    font-size: clamp(32px, 7vw, 52px) !important;
+    font-size: clamp(32px, 8vw, 52px) !important;
     line-height: 1.1 !important;
     margin: 0 0 16px !important;
     overflow-wrap: break-word !important;
   }
   .fe-hero__lead {
-    font-size: clamp(16px, 2.6vw, 22px) !important;
-    line-height: 1.45 !important;
-    max-width: 36em !important;
+    font-size: clamp(16px, 2.8vw, 22px) !important;
+    line-height: 1.4 !important;
+    max-width: 600px !important;
+    width: 600px !important;
+    text-align: left !important;
+    text-align-last: left !important;
+    text-justify: auto !important;
+    hyphens: none !important;
+    word-spacing: normal !important;
+    letter-spacing: normal !important;
     margin: 0 0 24px !important;
   }
   .fe-hero__content .fe-btn {
@@ -4617,7 +4641,8 @@ main .fe-cta .fe-btn:hover {
 }
 @media (max-width: 400px) {
   .fe-hero {
-    min-height: min(68vh, 520px) !important;
+    min-height: max(600px, 100vh) !important;
+    max-height: auto !important;
   }
   .fe-hero__content {
     padding: 32px 16px !important;
@@ -4712,7 +4737,6 @@ main .fe-cta .fe-btn:hover {
   .fe-iter-section,
   .fe-iter-stack,
   .fe-section,
-  .fe-hero__content,
   .fe-about,
   .fe-services,
   .fe-services__list,
@@ -4733,10 +4757,6 @@ main .fe-cta .fe-btn:hover {
     max-width: calc(100% - 64px) !important;
     margin-left: 32px !important;
     margin-right: 32px !important;
-  }
-  .fe-hero__content {
-    padding-left: 32px !important;
-    padding-right: 32px !important;
   }
 }
 
@@ -4776,7 +4796,6 @@ main .fe-cta .fe-btn:hover {
   .fe-iter-section,
   .fe-iter-stack,
   .fe-section,
-  .fe-hero__content,
   .fe-about,
   .fe-services,
   .fe-services__list,
@@ -4936,7 +4955,6 @@ main .fe-cta .fe-btn:hover {
 
 /* ---- Desktop ---- */
 @media (min-width: 961px) {
-  .fe-hero__content,
   .fe-section,
   .fe-case-hero,
   .fe-case-block,
@@ -4975,7 +4993,6 @@ main .fe-cta .fe-btn:hover {
 
 /* ---- Tablet ---- */
 @media (min-width: 601px) and (max-width: 960px) {
-  .fe-hero__content,
   .fe-section,
   .fe-case-hero,
   .fe-case-block,
@@ -5026,7 +5043,6 @@ main .fe-cta .fe-btn:hover {
 
 /* ---- Mobile ---- */
 @media (max-width: 600px) {
-  .fe-hero__content,
   .fe-section,
   .fe-case-hero,
   .fe-case-block,
