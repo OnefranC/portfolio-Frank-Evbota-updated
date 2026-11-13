@@ -4540,8 +4540,8 @@ main .fe-cta .fe-btn:hover {
     margin-left: 0 !important;
     margin-right: auto !important;
     text-align: left !important;
-    padding-left: 48px !important;
-    padding-right: 24px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
     max-width: 672px !important;
     width: fit-content !important;
     box-sizing: border-box !important;
@@ -4577,7 +4577,7 @@ main .fe-cta .fe-btn:hover {
 /* ===== Hero on tablet/mobile: fill bg, no black strip, center-left copy ===== */
 @media (max-width: 960px) {
   .fe-hero {
-    min-height: max(600px, 100vh) !important;
+    min-height: min(calc(88vh + 24px), 868px) !important;
     max-height: auto !important;
     padding: 0 !important;
     align-items: center !important;
@@ -4594,20 +4594,35 @@ main .fe-cta .fe-btn:hover {
     max-width: none !important;
   }
   .fe-hero__bg img.fe-hero__photo {
-    width: 100% !important;
-    left: 50% !important;
-    right: auto !important;
-    transform: translateX(-50%) !important;
+    width: 47% !important;
+    left: auto !important;
+    right: 0 !important;
+    transform: none !important;
     object-position: center top !important;
-    opacity: 0.5 !important;
-    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%) !important;
-    mask-image: linear-gradient(to left, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%) !important;
+    opacity: 0.9 !important;
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.55) 28%,
+        #000 62%
+      ),
+      linear-gradient(to bottom, transparent 0%, #000 14%, #000 86%, transparent 100%) !important;
+    -webkit-mask-composite: source-in !important;
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.55) 28%,
+        #000 62%
+      ),
+      linear-gradient(to bottom, transparent 0%, #000 14%, #000 86%, transparent 100%) !important;
+    mask-composite: intersect !important;
   }
   main > .fe-rhythm.fe-rhythm.fe-rhythm .fe-hero__content.fe-hero__content {
     margin-left: 0 !important;
     margin-right: auto !important;
     text-align: left !important;
-    padding-left: 48px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
     max-width: 672px !important;
     width: fit-content !important;
     box-sizing: border-box !important;
