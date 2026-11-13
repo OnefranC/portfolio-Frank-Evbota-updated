@@ -4555,7 +4555,7 @@ main .fe-cta .fe-btn:hover {
   .fe-hero__lead {
     font-size: clamp(16px, 2.8vw, 22px) !important;
     line-height: 1.4 !important;
-    max-width: 600px !important;
+    max-width: 180px !important;
     width: 600px !important;
     margin-bottom: 24px !important;
     text-align: left !important;
@@ -4636,7 +4636,7 @@ main .fe-cta .fe-btn:hover {
   .fe-hero__lead {
     font-size: clamp(16px, 2.8vw, 22px) !important;
     line-height: 1.4 !important;
-    max-width: 600px !important;
+    max-width: 180px !important;
     width: 600px !important;
     text-align: left !important;
     text-align-last: left !important;
