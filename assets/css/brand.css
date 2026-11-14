@@ -17,6 +17,7 @@
 html {
   scroll-behavior: smooth;
   font-optical-sizing: auto;
+  scrollbar-gutter: stable;
 }
 
 body {
