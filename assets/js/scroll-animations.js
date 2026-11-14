@@ -118,6 +118,13 @@
       ticking = false;
     }
 
+    function onScroll() {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    }
+
     // Determines header scrolled state (hide/show on scroll)
     // Header is always dark theme — no light/dark switching
 
