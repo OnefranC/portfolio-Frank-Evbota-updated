@@ -75,6 +75,20 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
+
+  .fe-hero__lead {
+    max-width: clamp(300px, calc(0.2143vw + 231.42px), 360px);
+  }
+  .fe-hero__bg img.fe-hero__photo {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin-inline: auto;
+    object-position: center top !important;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+    opacity: 1 !important;
+  }
 }
 
 .fe-logo {
@@ -280,21 +294,37 @@ body {
   .fe-hero {
     min-height: 600px;
   }
+
+  /* Photo: smaller (~30% less than the 47% desktop width), locked aspect,
+     edges dissolved into #07080c on all four sides. */
+  .fe-hero__photo {
+    top: 6%;
+    right: 0;
+    width: 33%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center top;
+    opacity: 0.85;
+    -webkit-mask-image: radial-gradient(
+      ellipse 72% 62% at 50% 46%,
+      #000 42%,
+      rgba(0, 0, 0, 0.6) 62%,
+      transparent 88%
+    );
+    mask-image: radial-gradient(
+      ellipse 72% 62% at 50% 46%,
+      #000 42%,
+      rgba(0, 0, 0, 0.6) 62%,
+      transparent 88%
+    );
+  }
 }
 
 .fe-hero__bg {
   position: absolute;
   inset: 0;
   z-index: 0;
-}
-
-/* —— Hero animated wave mesh (canvas dot field) —— */
-.fe-wave-canvas {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
 }
 
 /* —— Hero photo (right side, soft blend into background) —— */
@@ -354,7 +384,7 @@ body {
   font-size: clamp(18px, 2.2vw, 28px);
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.92);
-  max-width: 720px;
+  max-width: 550px;
   margin: 0 0 32px;
   font-weight: 400;
 }
@@ -1460,6 +1490,13 @@ body {
     opacity: 1;
     transform: none;
   }
+}
+
+/* Disable CSS keyframe hero entrance when GSAP drives it */
+.fe-gsap .fe-hero__content > * {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 @keyframes fe-hero-bg {
@@ -4473,7 +4510,7 @@ main .fe-cta .fe-btn {
   padding-left: 48px !important;
 }
 
-/* ===== Desktop: hero lead as perfect rectangle (600px, justified) ===== */
+/* ===== Desktop: hero lead as perfect rectangle (550px, justified) ===== */
 @media (min-width: 961px) {
   main > .fe-rhythm.fe-rhythm.fe-rhythm .fe-hero__content.fe-hero__content {
     width: fit-content !important;
@@ -4481,8 +4518,8 @@ main .fe-cta .fe-btn {
     box-sizing: border-box !important;
   }
   .fe-hero__lead {
-    width: 600px !important;
-    max-width: 600px !important;
+    width: 550px !important;
+    max-width: 550px !important;
     text-align: left !important;
     text-align-last: left !important;
     text-justify: auto !important;
@@ -4556,8 +4593,8 @@ main .fe-cta .fe-btn:hover {
   .fe-hero__lead {
     font-size: clamp(16px, 2.8vw, 22px) !important;
     line-height: 1.4 !important;
-    max-width: 300px !important;
-    width: 600px !important;
+    max-width: clamp(300px, calc(64.07vw - 85.06px), 530px) !important;
+    width: auto !important;
     margin-bottom: 24px !important;
     text-align: left !important;
     text-align-last: left !important;
@@ -4637,8 +4674,8 @@ main .fe-cta .fe-btn:hover {
   .fe-hero__lead {
     font-size: clamp(16px, 2.8vw, 22px) !important;
     line-height: 1.4 !important;
-    max-width: 300px !important;
-    width: 600px !important;
+    max-width: clamp(300px, calc(64.07vw - 85.06px), 530px) !important;
+    width: clamp(300px, calc(64.07vw - 85.06px), 530px) !important;
     text-align: left !important;
     text-align-last: left !important;
     text-justify: auto !important;
@@ -4664,69 +4701,45 @@ main .fe-cta .fe-btn:hover {
     padding: 32px 16px !important;
   }
 }
+@media (max-width: 600px) {
+  .fe-hero__bg img.fe-hero__photo {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin-inline: auto;
+    object-position: center top !important;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+    opacity: 1 !important;
+  }
+  .fe-hero__content {
+    row-gap: 0 !important;
+    margin-right: 0 !important;
+  }
+  .fe-hero__content h1 {
+    margin-bottom: 12px !important;
+  }
+  .fe-hero__content > .fe-btn {
+    width: 328px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box;
+    display: inline-flex !important;
+    justify-content: center;
+    text-align: center !important;
+  }
+}
 
-/* Hero "View My work": primary emphasis */
+/* Hero "View My work": white fill/dark text, hover dark fill/white text + white outline */
 .fe-hero__content .fe-btn {
   padding: 18px 36px !important;
   font-size: 16px !important;
   font-weight: 700 !important;
   border-radius: 12px !important;
   background: #ffffff !important;
-  color: #0e1112 !important;
+  color: var(--fe-ink) !important;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28) !important;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease !important;
-}
-.fe-hero__content .fe-btn:hover {
-  transform: translateY(-3px) !important;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.34) !important;
-}
-
-/* Hero "View My work": loud dark-grey fill, white text */
-.fe-hero__content .fe-btn {
-  background: #253746 !important;
-  color: #ffffff !important;
-}
-.fe-hero__content .fe-btn:hover {
-  background: #253746 !important;
-  color: #ffffff !important;
-  transform: translateY(-3px) !important;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.34) !important;
-}
-
-/* Hero "View My work": match View all projects color (#121515) */
-.fe-hero__content .fe-btn {
-  background: #121515 !important;
-  color: #ffffff !important;
-}
-.fe-hero__content .fe-btn:hover {
-  background: #121515 !important;
-  color: #ffffff !important;
-}
-
-/* Hero "View My work": match "View all projects" dark button colors */
-.fe-hero__content .fe-btn {
-  background: var(--fe-ink) !important;
-  color: #ffffff !important;
-}
-.fe-hero__content .fe-btn:hover {
-  background: var(--fe-ink) !important;
-  color: #ffffff !important;
-  transform: translateY(-3px) !important;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.34) !important;
-}
-
-/* Hero "View My work": white fill + dark text on hover (keep lift + shadow) */
-.fe-hero__content .fe-btn:hover {
-  background: #ffffff !important;
-  color: var(--fe-ink) !important;
-  transform: translateY(-3px) !important;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.34) !important;
-}
-
-/* Hero "View My work": flip — white fill/dark text, hover dark fill/white text + motion + white outline */
-.fe-hero__content .fe-btn {
-  background: #ffffff !important;
-  color: var(--fe-ink) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease, outline-color 0.2s ease !important;
 }
 .fe-hero__content .fe-btn:hover {
   background: var(--fe-ink) !important;
