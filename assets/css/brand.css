@@ -7447,12 +7447,17 @@ main > .fe-about-section .fe-about {
   }
 }
 
-/* Tablet: contact section 80px side margins, 24px globe-form gutter */
+/* Tablet: contact section 80px side margins, 24px globe-form gutter,
+   globe and form each fill container width */
 @media (min-width: 601px) and (max-width: 960px) {
   .fe-contact__frame {
     gap: 24px;
   }
+  .fe-globe {
+    width: 100%;
+  }
   .fe-contact__content {
+    width: 100%;
     padding-left: 0;
     padding-right: 0;
   }
