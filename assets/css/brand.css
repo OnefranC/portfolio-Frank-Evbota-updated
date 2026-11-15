@@ -22,6 +22,7 @@ html {
      changes between a short page (no scrollbar) and a long page (scrollbar),
      keeping nav links from shifting left/right when switching pages. */
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* Keep scrollbar gutter stable across pages so nav links and all centered
@@ -4778,7 +4779,8 @@ main .fe-cta .fe-btn:hover {
     margin-bottom: 12px !important;
   }
   .fe-hero__content > .fe-btn {
-    width: 328px !important;
+    width: auto !important;
+    max-width: 100% !important;
     margin-left: auto !important;
     margin-right: auto !important;
     box-sizing: border-box;
