@@ -47,7 +47,7 @@ body {
 
 /* —— Header —— */
 .fe-header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -147,7 +147,7 @@ body {
 
 /* —— Header dark sticky overlay (homepage only, works with dark hero) —— */
 .fe-header--overlay {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
