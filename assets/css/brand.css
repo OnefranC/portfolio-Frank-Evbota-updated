@@ -4216,19 +4216,38 @@ main .fe-cta .fe-btn {
   }
 }
 
-/* Mobile: What I do section — exactly 16px left/right on section and content only */
+/* Mobile: What I do section — exactly 16px left/right margins on section and content only,
+   no inner padding on cards or headings, center-aligned. */
 @media (max-width: 600px) {
   .fe-services {
     margin-left: 16px;
     margin-right: 16px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   .fe-services__list {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   .fe-service {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    padding: 0 !important;
+  }
+  h1,
+  h2 {
+    padding: 0 !important;
+    text-align: center !important;
+  }
+  /* Center align page content on mobile */
+  .fe-section,
+  .fe-services,
+  .fe-contact {
+    text-align: center !important;
+  }
+  .fe-hero__content > .fe-btn {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
