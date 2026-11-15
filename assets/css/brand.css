@@ -20,6 +20,13 @@ html {
   scrollbar-gutter: stable;
 }
 
+/* Keep scrollbar gutter stable across pages so nav links and all centered
+   content never shift left/right when switching between a short page
+   (no scrollbar) and a long page (scrollbar present). */
+body {
+  scrollbar-gutter: stable;
+}
+
 body {
   font-family: var(--fe-font);
   color: var(--fe-ink);
