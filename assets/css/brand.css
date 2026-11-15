@@ -221,7 +221,7 @@ body {
 
 /* Push all page content down to clear the fixed top header on every page. */
 main {
-  padding-top: 70px;
+  padding-top: 0;
 }
 
 /* Keep the burger visible on mobile over the dark hero */
