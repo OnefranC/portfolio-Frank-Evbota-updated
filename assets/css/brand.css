@@ -18,6 +18,10 @@ html {
   scroll-behavior: smooth;
   font-optical-sizing: auto;
   scrollbar-gutter: stable;
+  /* Force vertical scrollbar to always be present so content width never
+     changes between a short page (no scrollbar) and a long page (scrollbar),
+     keeping nav links from shifting left/right when switching pages. */
+  overflow-y: scroll;
 }
 
 /* Keep scrollbar gutter stable across pages so nav links and all centered
