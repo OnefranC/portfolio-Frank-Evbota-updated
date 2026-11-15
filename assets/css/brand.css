@@ -30,6 +30,7 @@ html {
    (no scrollbar) and a long page (scrollbar present). */
 body {
   scrollbar-gutter: stable;
+  overflow-x: hidden;
 }
 
 body {
