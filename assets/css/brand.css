@@ -292,13 +292,13 @@ body {
     min-height: 600px;
   }
 
-  /* Photo: aspect ratio fixed, sized at 80% of container, top center aligned,
+  /* Photo: aspect ratio fixed, sized at 70% of container, top center aligned,
      edges masked into #07080c so it blends with the dark background. */
   .fe-hero__photo {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 80%;
+    width: 70%;
     height: auto;
     object-fit: cover;
     object-position: center top;
