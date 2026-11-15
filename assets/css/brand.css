@@ -4671,27 +4671,27 @@ main .fe-cta .fe-btn:hover {
     max-width: none !important;
   }
   .fe-hero__bg img.fe-hero__photo {
-    width: 47% !important;
-    left: auto !important;
-    right: 0 !important;
-    transform: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
     object-position: center top !important;
-    opacity: 0.9 !important;
-    -webkit-mask-image: linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.55) 28%,
-        #000 62%
-      ),
-      linear-gradient(to bottom, transparent 0%, #000 14%, #000 86%, transparent 100%) !important;
+    opacity: 0.85 !important;
+    -webkit-mask-image: radial-gradient(
+      ellipse 72% 62% at 50% 46%,
+      #000 42%,
+      rgba(0, 0, 0, 0.6) 62%,
+      transparent 88%
+    ) !important;
     -webkit-mask-composite: source-in !important;
-    mask-image: linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.55) 28%,
-        #000 62%
-      ),
-      linear-gradient(to bottom, transparent 0%, #000 14%, #000 86%, transparent 100%) !important;
+    mask-image: radial-gradient(
+      ellipse 72% 62% at 50% 46%,
+      #000 42%,
+      rgba(0, 0, 0, 0.6) 62%,
+      transparent 88%
+    ) !important;
     mask-composite: intersect !important;
   }
   main > .fe-rhythm.fe-rhythm.fe-rhythm .fe-hero__content.fe-hero__content {
