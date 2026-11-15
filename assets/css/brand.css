@@ -1114,8 +1114,8 @@ body {
 
 @media (min-width: 601px) and (max-width: 960px) {
   .fe-contact {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
@@ -7447,11 +7447,14 @@ main > .fe-about-section .fe-about {
   }
 }
 
-/* Tablet: contact form 120px side padding */
+/* Tablet: contact section 80px side margins, 24px globe-form gutter */
 @media (min-width: 601px) and (max-width: 960px) {
+  .fe-contact__frame {
+    gap: 24px;
+  }
   .fe-contact__content {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
