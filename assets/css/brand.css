@@ -1271,7 +1271,14 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0;
-    padding: 0 0 16px 0 !important;
+    padding: 0 !important;
+  }
+  .fe-service h3,
+  .fe-service p,
+  .fe-service__num,
+  .fe-service__tags {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   .fe-service > div:nth-child(2) {
