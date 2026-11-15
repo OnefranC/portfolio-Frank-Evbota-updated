@@ -4814,6 +4814,34 @@ main .fe-cta .fe-btn:hover {
     justify-content: center;
     text-align: center !important;
   }
+
+  /* All pages: max 16px left/right page margin on mobile; content fills container */
+  .fe-section,
+  .fe-services,
+  .fe-contact,
+  .fe-hero,
+  .fe-marquee,
+  .fe-page-hero,
+  .fe-case-hero,
+  .fe-footer {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+  }
+  .fe-section > *,
+  .fe-services__list > *,
+  .fe-contact > *,
+  .fe-hero__content > *,
+  .fe-marquee__track > *,
+  .fe-page-hero > *,
+  .fe-case-hero > *,
+  .fe-footer__inner > * {
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+  }
 }
 
 /* Phone hero photo: fills container, top center aligned, aspect ratio fixed via object-fit: cover,
