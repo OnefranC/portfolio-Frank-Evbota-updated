@@ -4217,7 +4217,8 @@ main .fe-cta .fe-btn {
 }
 
 /* Mobile: What I do section — 16px gap between 1st card and bottom of Paragraph,
-   no padding anywhere. Text-align left on all pages. */
+   16px top/bottom padding for cards, 80px spacing between 3rd card and footer.
+   Text-align left on all pages. */
 @media (max-width: 600px) {
   .fe-services {
     margin-left: 16px;
@@ -4234,7 +4235,10 @@ main .fe-cta .fe-btn {
     padding: 0 !important;
   }
   .fe-service {
-    padding: 0 !important;
+    padding: 16px 0 !important;
+  }
+  .fe-service:last-child {
+    margin-bottom: 80px;
   }
   h1,
   h2 {
