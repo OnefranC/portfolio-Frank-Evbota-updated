@@ -4216,20 +4216,22 @@ main .fe-cta .fe-btn {
   }
 }
 
-/* Mobile: What I do section — exactly 16px left/right margins on section and content only,
-   no inner padding on cards or headings, center-aligned. */
+/* Mobile: What I do section — exactly 16px left/right margins on section only,
+   32px gap between paragraph and 1st card, no padding anywhere inside. */
 @media (max-width: 600px) {
   .fe-services {
     margin-left: 16px;
     margin-right: 16px;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding: 0 !important;
   }
   .fe-services__list {
-    margin-left: 16px;
-    margin-right: 16px;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 !important;
+  }
+  .fe-section {
+    margin-bottom: 32px;
+    padding: 0 !important;
   }
   .fe-service {
     padding: 0 !important;
