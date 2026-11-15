@@ -1112,6 +1112,24 @@ body {
   padding: 72px 24px 100px;
 }
 
+/* Mobile: contact section side margins, globe and form fill container */
+@media (min-width: 360px) and (max-width: 600px) {
+  .fe-contact {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .fe-contact__frame {
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+  .fe-globe {
+    width: 100%;
+  }
+  .fe-contact__content {
+    width: 100%;
+  }
+}
+
 @media (min-width: 601px) and (max-width: 960px) {
   .fe-contact {
     padding-left: 80px;
@@ -7498,13 +7516,13 @@ main > .fe-about-section .fe-about {
 @media (min-width: 961px) {
   .fe-contact__frame {
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
     gap: 32px;
   }
   .fe-globe {
     position: relative;
     flex: 0 0 50%;
-    width: auto;
+    width: 100%;
     aspect-ratio: 1 / 1;
   }
   .fe-contact__content {
