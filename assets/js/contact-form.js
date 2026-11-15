@@ -4,7 +4,7 @@
 
   // Deployed Apps Script Web app URL (does: Sheet append + email alert)
   var ENDPOINT =
-    'https://script.google.com/macros/s/AKfycbwA7GM2Xp717bFHnpyU0BY_vbSvZtmQIqC26DaQAmtlv3DJkaD1RuDqgiXDDRReP3zMSQ/exec';
+    'https://script.google.com/macros/s/AKfycbzRxtn2bcXlUS6D2bBfjXN-Tse3nKhovMULI_x1yU0iJQl01OVngRv9LVJsV06A9OgH8w/exec';
 
   var form = document.querySelector('.fe-form');
   if (!form) return;
