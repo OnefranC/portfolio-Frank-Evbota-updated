@@ -4216,8 +4216,8 @@ main .fe-cta .fe-btn {
   }
 }
 
-/* Mobile: What I do section — exactly 16px left/right margins on section only,
-   32px gap between paragraph and 1st card, no padding anywhere inside. */
+/* Mobile: What I do section — 16px gap between 1st card and bottom of Paragraph,
+   no padding anywhere. Text-align left on all pages. */
 @media (max-width: 600px) {
   .fe-services {
     margin-left: 16px;
@@ -4230,7 +4230,7 @@ main .fe-cta .fe-btn {
     padding: 0 !important;
   }
   .fe-section {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     padding: 0 !important;
   }
   .fe-service {
@@ -4239,16 +4239,16 @@ main .fe-cta .fe-btn {
   h1,
   h2 {
     padding: 0 !important;
-    text-align: center !important;
+    text-align: left !important;
   }
-  /* Center align page content on mobile */
+  /* Left-align page content on mobile */
   .fe-section,
   .fe-services,
   .fe-contact {
-    text-align: center !important;
+    text-align: left !important;
   }
   .fe-hero__content > .fe-btn {
-    margin-left: auto !important;
+    margin-left: 0 !important;
     margin-right: auto !important;
   }
 }
@@ -4793,7 +4793,7 @@ main .fe-cta .fe-btn:hover {
   .fe-hero__content {
     row-gap: 0 !important;
     margin-right: 0 !important;
-    text-align: center !important;
+    text-align: left !important;
     padding-left: 16px !important;
     padding-right: 16px !important;
   }
@@ -4803,12 +4803,12 @@ main .fe-cta .fe-btn:hover {
   .fe-hero__content > .fe-btn {
     width: auto !important;
     max-width: 100% !important;
-    margin-left: auto !important;
+    margin-left: 0 !important;
     margin-right: auto !important;
     box-sizing: border-box;
     display: inline-flex !important;
-    justify-content: center;
-    text-align: center !important;
+    justify-content: flex-start;
+    text-align: left !important;
   }
 }
 
