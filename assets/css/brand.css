@@ -4214,6 +4214,22 @@ main .fe-cta .fe-btn {
   }
 }
 
+/* Mobile: What I do section — 16px left/right margins on section and content */
+@media (max-width: 600px) {
+  .fe-services {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .fe-services__list {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  .fe-service {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
 /* ===== Mobile: home projects 60px gap; ReadWell sections 64px ===== */
 @media (max-width: 960px) {
   /* Home page: 60px between the three case study cards */
