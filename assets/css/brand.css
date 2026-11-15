@@ -4214,7 +4214,7 @@ main .fe-cta .fe-btn {
   }
 }
 
-/* Mobile: What I do section — 16px left/right margins on section and content */
+/* Mobile: What I do section — exactly 16px left/right on section and content only */
 @media (max-width: 600px) {
   .fe-services {
     margin-left: 16px;
@@ -4770,14 +4770,17 @@ main .fe-cta .fe-btn:hover {
   .fe-hero__content {
     row-gap: 0 !important;
     margin-right: 0 !important;
+    text-align: center !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
   .fe-hero__content h1 {
     margin-bottom: 12px !important;
   }
   .fe-hero__content > .fe-btn {
     width: 328px !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     box-sizing: border-box;
     display: inline-flex !important;
     justify-content: center;
