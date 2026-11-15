@@ -340,31 +340,33 @@ body {
 }
 
 /* —— Hero photo (right side, soft blend into background) —— */
-.fe-hero__photo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 47%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  opacity: 0.9;
-  -webkit-mask-image: linear-gradient(
-      to right,
-      transparent 0%,
-      rgba(0, 0, 0, 0.55) 28%,
-      #000 62%
-    ),
-    linear-gradient(to bottom, transparent 0%, #000 14%, #000 86%, transparent 100%);
-  -webkit-mask-composite: source-in;
-  mask-image: linear-gradient(
-      to right,
-      transparent 0%,
-      rgba(0, 0, 0, 0.55) 28%,
-      #000 62%
-    ),
-    linear-gradient(to bottom, transparent 0%, #000 14%, #000 86%, transparent 100%);
-  mask-composite: intersect;
+@media (min-width: 961px) {
+  .fe-hero__photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 47%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    opacity: 0.9;
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.55) 28%,
+        #000 62%
+      ),
+      linear-gradient(to bottom, transparent 0%, #000 14%, #000 86%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.55) 28%,
+        #000 62%
+      ),
+      linear-gradient(to bottom, transparent 0%, #000 14%, #000 86%, transparent 100%);
+    mask-composite: intersect;
+  }
 }
 
 .fe-hero__content {
