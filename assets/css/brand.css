@@ -81,13 +81,25 @@ body {
   }
   .fe-hero__bg img.fe-hero__photo {
     width: 100% !important;
-    left: 0 !important;
-    right: 0 !important;
-    margin-inline: auto;
+    height: 100% !important;
+    top: 0 !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
     object-position: center top !important;
-    -webkit-mask-image: none !important;
-    mask-image: none !important;
-    opacity: 1 !important;
+    opacity: 0.85 !important;
+    -webkit-mask-image: radial-gradient(
+      ellipse 72% 62% at 50% 46%,
+      #000 42%,
+      rgba(0, 0, 0, 0.6) 62%,
+      transparent 88%
+    ) !important;
+    mask-image: radial-gradient(
+      ellipse 72% 62% at 50% 46%,
+      #000 42%,
+      rgba(0, 0, 0, 0.6) 62%,
+      transparent 88%
+    ) !important;
   }
 }
 
@@ -295,17 +307,17 @@ body {
     min-height: 600px;
   }
 
-  /* Photo: smaller (~30% less than the 47% desktop width), locked aspect,
-     edges dissolved into #07080c on all four sides. */
+  /* Photo: fills container, top center aligned, aspect ratio fixed via object-fit: cover,
+     edges dissolved into #07080c so it blends with the dark background. */
   .fe-hero__photo {
-    top: 6%;
-    right: 0;
-    width: 33%;
-    height: auto;
-    aspect-ratio: 3 / 4;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center top;
     opacity: 0.85;
+    transform: translateX(-50%);
     -webkit-mask-image: radial-gradient(
       ellipse 72% 62% at 50% 46%,
       #000 42%,
@@ -4704,13 +4716,25 @@ main .fe-cta .fe-btn:hover {
 @media (max-width: 600px) {
   .fe-hero__bg img.fe-hero__photo {
     width: 100% !important;
-    left: 0 !important;
-    right: 0 !important;
-    margin-inline: auto;
+    height: 100% !important;
+    top: 0 !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
     object-position: center top !important;
-    -webkit-mask-image: none !important;
-    mask-image: none !important;
-    opacity: 1 !important;
+    opacity: 0.85 !important;
+    -webkit-mask-image: radial-gradient(
+      ellipse 72% 62% at 50% 46%,
+      #000 42%,
+      rgba(0, 0, 0, 0.6) 62%,
+      transparent 88%
+    ) !important;
+    mask-image: radial-gradient(
+      ellipse 72% 62% at 50% 46%,
+      #000 42%,
+      rgba(0, 0, 0, 0.6) 62%,
+      transparent 88%
+    ) !important;
   }
   .fe-hero__content {
     row-gap: 0 !important;
@@ -4727,6 +4751,35 @@ main .fe-cta .fe-btn:hover {
     display: inline-flex !important;
     justify-content: center;
     text-align: center !important;
+  }
+}
+
+/* Phone hero photo: fills container, top center aligned, aspect ratio fixed via object-fit: cover,
+   dissolve edges into bg. Placed AFTER the 600px reset above so it wins; every
+   declaration carries !important to beat that reset's !important rules. */
+@media (max-width: 600px) {
+  .fe-hero__bg img.fe-hero__photo {
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    opacity: 0.85 !important;
+    -webkit-mask-image: radial-gradient(
+      ellipse 72% 62% at 50% 46%,
+      #000 42%,
+      rgba(0, 0, 0, 0.6) 62%,
+      transparent 88%
+    ) !important;
+    mask-image: radial-gradient(
+      ellipse 72% 62% at 50% 46%,
+      #000 42%,
+      rgba(0, 0, 0, 0.6) 62%,
+      transparent 88%
+    ) !important;
   }
 }
 
