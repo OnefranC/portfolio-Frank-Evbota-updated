@@ -1268,7 +1268,10 @@ main {
   }
 
   .fe-service {
-    grid-template-columns: 48px 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0 0 16px 0 !important;
   }
 
   .fe-service > div:nth-child(2) {
