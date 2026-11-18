@@ -1,0 +1,165 @@
+- generic [active] [ref=f5e1]:
+  - banner [ref=f5e2]:
+    - generic [ref=f5e3]:
+      - link "fe." [ref=f5e4] [cursor=pointer]:
+        - /url: index.html
+      - navigation [ref=f5e5]:
+        - link "Home" [ref=f5e6] [cursor=pointer]:
+          - /url: index.html
+        - link "Projects" [ref=f5e7] [cursor=pointer]:
+          - /url: projects.html
+        - link "Download CV" [ref=f5e8] [cursor=pointer]:
+          - /url: https://rxresu.me/onefranc/franklin-evbota-ux-resume
+        - link "Contact me" [ref=f5e9] [cursor=pointer]:
+          - /url: contact-me.html
+  - main [ref=f5e10]:
+    - generic [ref=f5e11]:
+      - paragraph [ref=f5e12]: Case study · Website
+      - heading "TheShop" [level=1] [ref=f5e13]
+      - paragraph [ref=f5e14]: A Special Mega Sales Online Store
+      - img "TheShop product preview" [ref=f5e16]
+      - link "Download PDF" [ref=f5e18] [cursor=pointer]:
+        - /url: https://drive.google.com/file/d/1ASYBC-lyuTVhfA7YVEXc-p3GBXbdW5HB/view?usp=drive_link
+    - generic [ref=f5e20]:
+      - generic [ref=f5e21]:
+        - heading "Problem" [level=2] [ref=f5e22]
+        - paragraph [ref=f5e23]: “Available online shopping websites have challenges in providing an intuitive and secure shopping experience to users. The existing search filter functionality needs improvement, and there is a need to enhance the payment system's security while maintaining user convenience..”
+      - generic [ref=f5e25]:
+        - heading "Details" [level=2] [ref=f5e26]
+        - generic [ref=f5e27]:
+          - paragraph [ref=f5e31]: "My role: Sole designer"
+          - paragraph [ref=f5e35]: "Responsibilities: End-to-end process"
+      - generic [ref=f5e37]:
+        - heading "Goal" [level=2] [ref=f5e38]
+        - paragraph [ref=f5e39]: “Design a website providing an exceptional user experience through efficient search filter functionality, ensuring a secure and trustworthy payment system, and consistently offering a diverse and curated selection of products”.
+    - generic [ref=f5e40]:
+      - heading "Highlights" [level=2] [ref=f5e41]
+      - paragraph [ref=f5e42]: TheShop is a special mega sales online store designed to help users discover unbeatable deals across a wide range of product categories with ease.
+      - generic [ref=f5e44]:
+        - img "TheShop highlights" [ref=f5e45]
+        - generic [ref=f5e46]:
+          - img "TheShop — 16M products" [ref=f5e47]
+          - img "TheShop — 5.5M shoppers" [ref=f5e48]
+    - generic [ref=f5e49]:
+      - paragraph [ref=f5e50]: Chapter 1
+      - heading "Discovery" [level=2] [ref=f5e51]
+      - generic [ref=f5e52]:
+        - tablist "Discovery topics" [ref=f5e53]:
+          - tab "Understanding users" [selected] [ref=f5e54] [cursor=pointer]
+          - tab "Competitive analysis" [ref=f5e55] [cursor=pointer]
+          - tab "Building empathy" [ref=f5e56] [cursor=pointer]
+        - tabpanel [ref=f5e58]:
+          - img "Understanding users" [ref=f5e59]
+    - generic [ref=f5e60]:
+      - paragraph [ref=f5e61]: Chapter 2
+      - heading "Ideation" [level=2] [ref=f5e62]
+      - generic [ref=f5e63]:
+        - tablist "Ideation topics" [ref=f5e64]:
+          - tab "Wireframes" [selected] [ref=f5e65] [cursor=pointer]
+          - tab "Design exploration" [ref=f5e66] [cursor=pointer]
+        - tabpanel [ref=f5e68]:
+          - img "Wireframes" [ref=f5e69]
+    - generic [ref=f5e70]:
+      - paragraph [ref=f5e71]: Chapter 3
+      - heading "Evaluative research" [level=2] [ref=f5e72]
+    - generic [ref=f5e74]:
+      - generic [ref=f5e75]:
+        - generic [ref=f5e76]:
+          - paragraph [ref=f5e77]: Research
+          - heading "User testing" [level=3] [ref=f5e78]
+        - generic [ref=f5e79]:
+          - paragraph [ref=f5e80]: "From the evaluative research, I learned how satisfied participants were with the prototype. Additionally, I identified the required changes to improve the experience. User testing revealed that the majority of users accessed TheShop on mobile devices, highlighting the need for mobile-first design enhancements. Here are the main takeaways:"
+          - list [ref=f5e81]:
+            - listitem [ref=f5e82]:
+              - generic [ref=f5e83]: •
+              - generic [ref=f5e84]: Purchase intent increased significantly when discounts and promotions were clearly visible on product listings.
+            - listitem [ref=f5e85]:
+              - generic [ref=f5e86]: •
+              - generic [ref=f5e87]: Users frequently abandoned their carts due to unexpected or unclear shipping costs revealed at checkout.
+            - listitem [ref=f5e88]:
+              - generic [ref=f5e89]: •
+              - generic [ref=f5e90]: Participants described the site navigation as cluttered, which slowed product discovery and increased frustration.
+      - complementary [ref=f5e91]:
+        - paragraph [ref=f5e93]: “Users showed strong interest in refurbished technology products, driven primarily by affordability”.
+        - generic [ref=f5e98]:
+          - paragraph [ref=f5e99]: Participant 7
+          - paragraph [ref=f5e100]: User summarising impressions of the website
+    - generic [ref=f5e101]:
+      - paragraph [ref=f5e102]: Chapter 4
+      - heading "Design" [level=2] [ref=f5e103]
+      - paragraph [ref=f5e104]: Information architecture
+      - img "Information architecture" [ref=f5e106]
+    - generic [ref=f5e107]:
+      - paragraph [ref=f5e108]: Chapter 5
+      - heading "Guidelines & Libraries" [level=2] [ref=f5e109]
+      - generic [ref=f5e110]:
+        - tablist "Guidelines topics" [ref=f5e111]:
+          - tab "Style guide" [selected] [ref=f5e112] [cursor=pointer]
+          - tab "Typography" [ref=f5e113] [cursor=pointer]
+        - tabpanel [ref=f5e115]:
+          - img "Style guide" [ref=f5e116]
+    - generic [ref=f5e117]:
+      - paragraph [ref=f5e118]: Chapter 6
+      - heading "Hi-fi design" [level=2] [ref=f5e119]
+      - img "Hi-fi design overview" [ref=f5e121]
+      - generic [ref=f5e122]:
+        - img "Hi-fi design — left column mockups" [ref=f5e123]
+        - generic [ref=f5e124]:
+          - img "Hi-fi design — right column, top" [ref=f5e125]
+          - img "Hi-fi design — right column, bottom" [ref=f5e126]
+      - paragraph [ref=f5e127]:
+        - link "View prototype" [ref=f5e128] [cursor=pointer]:
+          - /url: https://www.figma.com/proto/OtlGWGq8Q3FK6VpandB22J/TheShop?node-id=147-2751&t=G3KxihFFtvHJFtQL-1&scaling=scale-down-width&content-scaling=fixed&page-id=3%3A2&starting-point-node-id=147%3A2751
+    - generic [ref=f5e129]:
+      - paragraph [ref=f5e130]: Chapter 7
+      - heading "Iterations" [level=2] [ref=f5e131]
+      - generic [ref=f5e132]:
+        - article [ref=f5e133]:
+          - generic [ref=f5e134]:
+            - heading "Mega sales and promotions" [level=3] [ref=f5e135]
+            - paragraph [ref=f5e136]: The carousel showcases featured products and promotions, allowing users to quickly browse top deals and highlights.
+          - img "Mega sales and promotions" [ref=f5e138]
+        - article [ref=f5e139]:
+          - generic [ref=f5e140]:
+            - heading "Secured payment" [level=3] [ref=f5e141]
+            - paragraph [ref=f5e142]: Payments are made more secure with OTP verification codes.
+          - img "Secured payment" [ref=f5e144]
+        - article [ref=f5e145]:
+          - generic [ref=f5e146]:
+            - heading "Detailed product information" [level=3] [ref=f5e147]
+            - paragraph [ref=f5e148]: The product details page provides comprehensive information about each item and allows users to share products with others.
+          - img "Detailed product information" [ref=f5e150]
+    - generic [ref=f5e151]:
+      - paragraph [ref=f5e152]: Outcomes
+      - heading "Outcomes" [level=2] [ref=f5e153]
+      - generic [ref=f5e154]:
+        - img "Outcomes 1" [ref=f5e155]
+        - img "Outcomes 2" [ref=f5e156]
+        - img "Outcomes 3" [ref=f5e157]
+    - generic [ref=f5e158]:
+      - heading "Retrospective" [level=2] [ref=f5e160]
+      - generic [ref=f5e161]:
+        - generic [ref=f5e162]:
+          - heading "What I would do differently" [level=3] [ref=f5e163]
+          - paragraph [ref=f5e164]: I would conduct more frequent usability testing with busy professionals to better validate time-saving features, also prototype and test the payment flow earlier to identify and resolve transaction-related friction points.
+        - generic [ref=f5e166]:
+          - heading "Lessons" [level=3] [ref=f5e167]
+          - paragraph [ref=f5e168]: I learned that even a small design change can have a huge impact on the user experience. The most important takeaway for me is to always focus on the real needs of the user when coming up with design ideas and solutions.
+        - generic [ref=f5e170]:
+          - heading "Tradeoffs" [level=3] [ref=f5e171]
+          - paragraph [ref=f5e172]: Balancing rich promotional content with clear navigation, security with convenience, and product breadth with focused discovery kept the experience efficient and trustworthy.
+  - contentinfo [ref=f5e173]:
+    - generic [ref=f5e174]:
+      - navigation "Footer" [ref=f5e175]:
+        - link "Home" [ref=f5e176] [cursor=pointer]:
+          - /url: index.html
+        - link "Projects" [ref=f5e177] [cursor=pointer]:
+          - /url: projects.html
+        - link "Contact me" [ref=f5e178] [cursor=pointer]:
+          - /url: contact-me.html
+      - generic [ref=f5e179]:
+        - heading "Get in touch" [level=2] [ref=f5e180]
+        - paragraph [ref=f5e181]: Feel free to reach out if you want to have a chat, or have any questions
+        - link "Contact me" [ref=f5e182] [cursor=pointer]:
+          - /url: contact-me.html
+      - generic [ref=f5e183]: Copyright © 2025 Evbota Franklin. All rights reserved.

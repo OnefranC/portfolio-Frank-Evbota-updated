@@ -1,0 +1,18 @@
+[    1283ms] ReferenceError: onScroll is not defined
+    at setupHeader (http://127.0.0.1:8899/assets/js/scroll-animations.js:124:39)
+    at HTMLDocument.init (http://127.0.0.1:8899/assets/js/scroll-animations.js:243:5)
+[   36330ms] ReferenceError: onScroll is not defined
+    at setupHeader (http://127.0.0.1:8899/assets/js/scroll-animations.js:124:39)
+    at HTMLDocument.init (http://127.0.0.1:8899/assets/js/scroll-animations.js:243:5)
+[   42171ms] ReferenceError: onScroll is not defined
+    at setupHeader (http://127.0.0.1:8899/assets/js/scroll-animations.js:124:39)
+    at HTMLDocument.init (http://127.0.0.1:8899/assets/js/scroll-animations.js:243:5)
+[   43259ms] ReferenceError: onScroll is not defined
+    at setupHeader (http://127.0.0.1:8899/assets/js/scroll-animations.js:124:39)
+    at HTMLDocument.init (http://127.0.0.1:8899/assets/js/scroll-animations.js:243:5)
+[   52619ms] ReferenceError: onScroll is not defined
+    at setupHeader (http://127.0.0.1:8899/assets/js/scroll-animations.js:124:39)
+    at HTMLDocument.init (http://127.0.0.1:8899/assets/js/scroll-animations.js:243:5)
+[   56361ms] ReferenceError: onScroll is not defined
+    at setupHeader (http://127.0.0.1:8899/assets/js/scroll-animations.js:124:39)
+    at HTMLDocument.init (http://127.0.0.1:8899/assets/js/scroll-animations.js:243:5)

@@ -1,0 +1,164 @@
+- generic [active] [ref=f10e1]:
+  - banner [ref=f10e2]:
+    - generic [ref=f10e3]:
+      - link "fe." [ref=f10e4] [cursor=pointer]:
+        - /url: index.html
+      - navigation [ref=f10e5]:
+        - link "Home" [ref=f10e6] [cursor=pointer]:
+          - /url: index.html
+        - link "Projects" [ref=f10e7] [cursor=pointer]:
+          - /url: projects.html
+        - link "Download CV" [ref=f10e8] [cursor=pointer]:
+          - /url: https://rxresu.me/onefranc/franklin-evbota-ux-resume
+        - link "Contact me" [ref=f10e9] [cursor=pointer]:
+          - /url: contact-me.html
+  - main [ref=f10e10]:
+    - generic [ref=f10e11]:
+      - paragraph [ref=f10e12]: Case study · Native app
+      - heading "ReadWell" [level=1] [ref=f10e13]
+      - paragraph [ref=f10e14]: The READ WELL tool is designed to help adults learn how to read for the first time
+      - img "ReadWell product preview" [ref=f10e16]
+      - link "Download PDF" [ref=f10e18] [cursor=pointer]:
+        - /url: https://drive.google.com/file/d/1NMlyxR2Cxpj2viT85siTN7iymj8_YjV5/view?usp=sharing
+    - generic [ref=f10e20]:
+      - generic [ref=f10e21]:
+        - heading "Problem" [level=2] [ref=f10e22]
+        - paragraph [ref=f10e23]: “Adult learners often face low confidence, limited access to resources, and motivation challenges when learning to read. Existing platforms are either geared toward children or lack engaging, adaptive experiences tailored to adults".
+      - generic [ref=f10e25]:
+        - heading "Details" [level=2] [ref=f10e26]
+        - generic [ref=f10e27]:
+          - paragraph [ref=f10e31]: "My role: Sole designer"
+          - paragraph [ref=f10e35]: "Responsibilities: End-to-end process"
+      - generic [ref=f10e37]:
+        - heading "Goal" [level=2] [ref=f10e38]
+        - paragraph [ref=f10e39]: “Our goal is to create a supportive, non-intimidating interface that respects adult learners’ dignity, deliver personalized, adaptive learning paths based on skill assessments, incorporate gamification to boost engagement and motivation, and provide community and tutor support to alleviate feelings of isolation”.
+    - generic [ref=f10e40]:
+      - heading "Highlights" [level=2] [ref=f10e41]
+      - paragraph [ref=f10e42]: ReadWell empowers adults to build reading skills through personalised, easy-to-follow lessons designed for real-life success.
+      - generic [ref=f10e44]:
+        - img "ReadWell highlights" [ref=f10e45]
+        - generic [ref=f10e46]:
+          - img "ReadWell — 1M learners" [ref=f10e47]
+          - img "ReadWell — 5.5k downloads" [ref=f10e48]
+    - generic [ref=f10e49]:
+      - paragraph [ref=f10e50]: Chapter 1
+      - heading "Discovery" [level=2] [ref=f10e51]
+      - generic [ref=f10e52]:
+        - tablist "Discovery topics" [ref=f10e53]:
+          - tab "Understanding users" [selected] [ref=f10e54] [cursor=pointer]
+          - tab "Competitive analysis" [ref=f10e55] [cursor=pointer]
+          - tab "Building empathy" [ref=f10e56] [cursor=pointer]
+        - tabpanel [ref=f10e58]:
+          - img "Understanding users" [ref=f10e59]
+    - generic [ref=f10e60]:
+      - paragraph [ref=f10e61]: Chapter 2
+      - heading "Ideation" [level=2] [ref=f10e62]
+      - generic [ref=f10e63]:
+        - tablist "Ideation topics" [ref=f10e64]:
+          - tab "Wireframes" [selected] [ref=f10e65] [cursor=pointer]
+          - tab "Design exploration" [ref=f10e66] [cursor=pointer]
+        - tabpanel [ref=f10e68]:
+          - img "Wireframes" [ref=f10e69]
+    - generic [ref=f10e70]:
+      - paragraph [ref=f10e71]: Chapter 3
+      - heading "Evaluative research" [level=2] [ref=f10e72]
+    - generic [ref=f10e74]:
+      - generic [ref=f10e75]:
+        - generic [ref=f10e76]:
+          - paragraph [ref=f10e77]: Research
+          - heading "User testing" [level=3] [ref=f10e78]
+        - generic [ref=f10e79]:
+          - paragraph [ref=f10e80]: "From the evaluative research, I learned how satisfied participants were with the prototype. Additionally, identified the required changes to improve the experience. User testing revealed that 5 out of 5 participants were excited about new experiences. Here are the main takeaways:"
+          - list [ref=f10e81]:
+            - listitem [ref=f10e82]:
+              - generic [ref=f10e83]: •
+              - generic [ref=f10e84]: "Onboarding completion rate: High when audio guidance is introduced within the first 10 seconds."
+            - listitem [ref=f10e85]:
+              - generic [ref=f10e86]: •
+              - generic [ref=f10e87]: "Users Session length: Average of 6–8 minutes per session."
+            - listitem [ref=f10e88]:
+              - generic [ref=f10e89]: •
+              - generic [ref=f10e90]: "Drop-off points: Text-heavy screens and unclear next steps."
+      - complementary [ref=f10e91]:
+        - paragraph [ref=f10e93]: "“Engagement drivers: Audio feedback and visible progress indicators increase daily return rates”."
+        - generic [ref=f10e98]:
+          - paragraph [ref=f10e99]: Participant 4
+          - paragraph [ref=f10e100]: User summarizing impressions of the app
+    - generic [ref=f10e101]:
+      - paragraph [ref=f10e102]: Chapter 4
+      - heading "Design" [level=2] [ref=f10e103]
+      - paragraph [ref=f10e104]: Information architecture
+      - img "Information architecture" [ref=f10e106]
+    - generic [ref=f10e107]:
+      - paragraph [ref=f10e108]: Chapter 5
+      - heading "Guidelines & Libraries" [level=2] [ref=f10e109]
+      - generic [ref=f10e110]:
+        - tablist "Guidelines topics" [ref=f10e111]:
+          - tab "Style guide" [selected] [ref=f10e112] [cursor=pointer]
+          - tab "Typography" [ref=f10e113] [cursor=pointer]
+        - tabpanel [ref=f10e115]:
+          - img "Style guide" [ref=f10e116]
+    - generic [ref=f10e117]:
+      - paragraph [ref=f10e118]: Chapter 6
+      - heading "Hi-fi design" [level=2] [ref=f10e119]
+      - generic [ref=f10e120]:
+        - img "Hi-fi design — left column" [ref=f10e121]
+        - generic [ref=f10e122]:
+          - img "Hi-fi design — right top" [ref=f10e123]
+          - img "Hi-fi design — right bottom" [ref=f10e124]
+      - paragraph [ref=f10e125]:
+        - link "View prototype" [ref=f10e126] [cursor=pointer]:
+          - /url: https://www.figma.com/proto/AZWrcUvAuYujXruYr1aEZq/ReadWell--App--Copy-?node-id=4743-17342&t=N8sK78NVyQzOEN4V-1&scaling=scale-down&content-scaling=fixed&page-id=4155%3A17125&starting-point-node-id=4755%3A17326
+    - generic [ref=f10e127]:
+      - paragraph [ref=f10e128]: Chapter 7
+      - heading "Iterations" [level=2] [ref=f10e129]
+      - generic [ref=f10e130]:
+        - article [ref=f10e131]:
+          - generic [ref=f10e132]:
+            - heading "Personalization" [level=3] [ref=f10e133]
+            - paragraph [ref=f10e134]: Personalised learning that helps you read for fun, for family, for others, and/or for work.
+          - img "Personalization" [ref=f10e136]
+        - article [ref=f10e137]:
+          - generic [ref=f10e138]:
+            - heading "Interactive learning" [level=3] [ref=f10e139]
+            - paragraph [ref=f10e140]: Learn by doing, not just reading.
+          - img "Interactive learning" [ref=f10e142]
+        - article [ref=f10e143]:
+          - generic [ref=f10e144]:
+            - heading "Notifications" [level=3] [ref=f10e145]
+            - paragraph [ref=f10e146]: Never miss a thing with notifications. From timely reminders that keep you motivated, focused, and on track with your learning goals, to new course alerts, achievements, and more.
+          - img "Notifications" [ref=f10e148]
+    - generic [ref=f10e149]:
+      - paragraph [ref=f10e150]: Outcomes
+      - heading "Outcomes" [level=2] [ref=f10e151]
+      - generic [ref=f10e152]:
+        - img "Outcomes — user satisfaction" [ref=f10e153]
+        - img "Outcomes — time spent" [ref=f10e154]
+        - img "Outcomes — screens" [ref=f10e155]
+    - generic [ref=f10e156]:
+      - heading "Retrospective" [level=2] [ref=f10e158]
+      - generic [ref=f10e159]:
+        - generic [ref=f10e160]:
+          - heading "What I would do differently" [level=3] [ref=f10e161]
+          - paragraph [ref=f10e162]: I would conduct more frequent usability testing with busy professionals to better validate time-saving features, also prototype and test the payment flow earlier to identify and resolve transaction-related friction points.
+        - generic [ref=f10e164]:
+          - heading "Lessons" [level=3] [ref=f10e165]
+          - paragraph [ref=f10e166]: I learned that even a small design change can have a huge impact on the user experience. The most important takeaway for me is to always focus on the real needs of the user when coming up with design ideas and solutions.
+        - generic [ref=f10e168]:
+          - heading "Tradeoffs" [level=3] [ref=f10e169]
+          - paragraph [ref=f10e170]: Balancing innovation with familiar UI patterns, automation with user control, visual richness with accessibility, and feature depth with usability ensured the experience remained efficient, inclusive, and intuitive without increasing the learning curve.
+  - contentinfo [ref=f10e171]:
+    - generic [ref=f10e172]:
+      - navigation "Footer" [ref=f10e173]:
+        - link "Home" [ref=f10e174] [cursor=pointer]:
+          - /url: index.html
+        - link "Projects" [ref=f10e175] [cursor=pointer]:
+          - /url: projects.html
+        - link "Contact me" [ref=f10e176] [cursor=pointer]:
+          - /url: contact-me.html
+      - generic [ref=f10e177]:
+        - heading "Get in touch" [level=2] [ref=f10e178]
+        - paragraph [ref=f10e179]: Feel free to reach out if you want to have a chat, or have any questions
+        - link "Contact me" [ref=f10e180] [cursor=pointer]:
+          - /url: contact-me.html
+      - generic [ref=f10e181]: Copyright © 2025 Evbota Franklin. All rights reserved.

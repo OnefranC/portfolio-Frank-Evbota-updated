@@ -1,0 +1,165 @@
+- generic [active] [ref=f9e1]:
+  - banner [ref=f9e2]:
+    - generic [ref=f9e3]:
+      - link "fe." [ref=f9e4] [cursor=pointer]:
+        - /url: index.html
+      - navigation [ref=f9e5]:
+        - link "Home" [ref=f9e6] [cursor=pointer]:
+          - /url: index.html
+        - link "Projects" [ref=f9e7] [cursor=pointer]:
+          - /url: projects.html
+        - link "Download CV" [ref=f9e8] [cursor=pointer]:
+          - /url: https://rxresu.me/onefranc/franklin-evbota-ux-resume
+        - link "Contact me" [ref=f9e9] [cursor=pointer]:
+          - /url: contact-me.html
+  - main [ref=f9e10]:
+    - generic [ref=f9e11]:
+      - paragraph [ref=f9e12]: Case study · Native app
+      - heading "MexiEats" [level=1] [ref=f9e13]
+      - paragraph [ref=f9e14]: A Mexican food ordering and delivery app for busy professionals
+      - img "MexiEats product preview" [ref=f9e16]
+      - link "Download PDF" [ref=f9e18] [cursor=pointer]:
+        - /url: https://drive.google.com/file/d/19vOsfaflH33eeyDjnDwEVHcvDMvjDwbo/view?usp=drive_link
+    - generic [ref=f9e20]:
+      - generic [ref=f9e21]:
+        - heading "Problem" [level=2] [ref=f9e22]
+        - paragraph [ref=f9e23]: “In today's fast-paced world, busy professionals often struggle to maintain a healthy diet due to their demanding schedules. With long work hours, constant meetings, and the need to balance personal commitments, finding the time to prepare or even order nutritious meals becomes a challenge. Many workers resort to unhealthy fast food options or skip meals entirely, leading to a decline in overall well-being and productivity”.
+      - generic [ref=f9e25]:
+        - heading "Details" [level=2] [ref=f9e26]
+        - generic [ref=f9e27]:
+          - paragraph [ref=f9e31]: "My role: Sole designer"
+          - paragraph [ref=f9e35]: "Responsibilities: End-to-end process"
+      - generic [ref=f9e37]:
+        - heading "Goal" [level=2] [ref=f9e38]
+        - paragraph [ref=f9e39]: “To design an intuitive food ordering and delivery app specifically for busy workers, leveraging assistive technology to make the process of ordering healthy Mexican meals quick, easy, and efficient”.
+    - generic [ref=f9e40]:
+      - heading "Highlights" [level=2] [ref=f9e41]
+      - paragraph [ref=f9e42]: MexiEats app makes it easy for busy professionals to order healthy, authentic Mexican meals quickly and efficiently.
+      - generic [ref=f9e44]:
+        - img "MexiEats highlights" [ref=f9e45]
+        - generic [ref=f9e46]:
+          - img "MexiEats — 1.5M orders" [ref=f9e47]
+          - img "MexiEats — 3M downloads" [ref=f9e48]
+    - generic [ref=f9e49]:
+      - paragraph [ref=f9e50]: Chapter 1
+      - heading "Discovery" [level=2] [ref=f9e51]
+      - generic [ref=f9e52]:
+        - tablist "Discovery topics" [ref=f9e53]:
+          - tab "Understanding users" [selected] [ref=f9e54] [cursor=pointer]
+          - tab "Pain points" [ref=f9e55] [cursor=pointer]
+          - tab "Building empathy" [ref=f9e56] [cursor=pointer]
+        - tabpanel [ref=f9e58]:
+          - img "Understanding users" [ref=f9e59]
+    - generic [ref=f9e60]:
+      - paragraph [ref=f9e61]: Chapter 2
+      - heading "Ideation" [level=2] [ref=f9e62]
+      - generic [ref=f9e63]:
+        - tablist "Ideation topics" [ref=f9e64]:
+          - tab "Wireframes" [selected] [ref=f9e65] [cursor=pointer]
+          - tab "Design exploration" [ref=f9e66] [cursor=pointer]
+        - tabpanel [ref=f9e68]:
+          - img "Wireframes" [ref=f9e69]
+    - generic [ref=f9e70]:
+      - paragraph [ref=f9e71]: Chapter 3
+      - heading "Evaluative research" [level=2] [ref=f9e72]
+    - generic [ref=f9e74]:
+      - generic [ref=f9e75]:
+        - generic [ref=f9e76]:
+          - paragraph [ref=f9e77]: Research
+          - heading "User testing" [level=3] [ref=f9e78]
+        - generic [ref=f9e79]:
+          - paragraph [ref=f9e80]: "From the evaluative research, I learned how satisfied participants were with the prototype. Additionally, I identified the required changes to improve the experience. User testing revealed that 5 out of 5 participants were excited about new experiences. Here are the main takeaways:"
+          - list [ref=f9e81]:
+            - listitem [ref=f9e82]:
+              - generic [ref=f9e83]: •
+              - generic [ref=f9e84]: Some participants wanted a way to track purchases/orders.
+            - listitem [ref=f9e85]:
+              - generic [ref=f9e86]: •
+              - generic [ref=f9e87]: Most participants suggested they want to be able to confirm their transaction before seeing the order confirmed message.
+            - listitem [ref=f9e88]:
+              - generic [ref=f9e89]: •
+              - generic [ref=f9e90]: It would be beneficial to be able to make payments with a debit card.
+      - complementary [ref=f9e91]:
+        - paragraph [ref=f9e93]: “This is very comprehensive. When can we use it?”
+        - generic [ref=f9e98]:
+          - paragraph [ref=f9e99]: Participant 5
+          - paragraph [ref=f9e100]: User summarising impressions of the new design
+    - generic [ref=f9e101]:
+      - paragraph [ref=f9e102]: Chapter 4
+      - heading "Design" [level=2] [ref=f9e103]
+      - paragraph [ref=f9e104]: Information architecture
+      - img "Information architecture" [ref=f9e106]
+    - generic [ref=f9e107]:
+      - paragraph [ref=f9e108]: Chapter 5
+      - heading "Guidelines & Libraries" [level=2] [ref=f9e109]
+      - generic [ref=f9e110]:
+        - tablist "Guidelines topics" [ref=f9e111]:
+          - tab "Style guide" [selected] [ref=f9e112] [cursor=pointer]
+          - tab "Typography" [ref=f9e113] [cursor=pointer]
+        - tabpanel [ref=f9e115]:
+          - img "Style guide" [ref=f9e116]
+    - generic [ref=f9e117]:
+      - paragraph [ref=f9e118]: Chapter 6
+      - heading "Hi-fi design" [level=2] [ref=f9e119]
+      - img "Hi-fi design overview" [ref=f9e121]
+      - generic [ref=f9e122]:
+        - img "Hi-fi design — mobile animation" [ref=f9e123]
+        - generic [ref=f9e124]:
+          - img "Hi-fi design — right column, top" [ref=f9e125]
+          - img "Hi-fi design — right column, bottom" [ref=f9e126]
+      - paragraph [ref=f9e127]:
+        - link "View prototype" [ref=f9e128] [cursor=pointer]:
+          - /url: https://www.figma.com/proto/Ec0bIkwizlR46rGI7v8xSV/MexiEats?page-id=141%3A375&node-id=2049-11070&viewport=534%2C32%2C0.02&t=Ps991HDf14ny93Ui-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1259%3A5218
+    - generic [ref=f9e129]:
+      - paragraph [ref=f9e130]: Chapter 7
+      - heading "Iterations" [level=2] [ref=f9e131]
+      - generic [ref=f9e132]:
+        - article [ref=f9e133]:
+          - generic [ref=f9e134]:
+            - heading "Simplified user interface" [level=3] [ref=f9e135]
+            - paragraph [ref=f9e136]: Our simplified interface reduces confusion, helping you choose and order meals quickly, effortlessly, and with confidence.
+          - img "Simplified user interface" [ref=f9e138]
+        - article [ref=f9e139]:
+          - generic [ref=f9e140]:
+            - heading "Updated meal information" [level=3] [ref=f9e141]
+            - paragraph [ref=f9e142]: Getting all the information you require for a certain meal has been made easier, as has placing orders.
+          - img "Updated meal information" [ref=f9e144]
+        - article [ref=f9e145]:
+          - generic [ref=f9e146]:
+            - heading "Real-time delivery tracking" [level=3] [ref=f9e147]
+            - paragraph [ref=f9e148]: You can track the delivery of your order in real-time making sure it arrives on time through the app.
+          - img "Real-time delivery tracking" [ref=f9e150]
+    - generic [ref=f9e151]:
+      - paragraph [ref=f9e152]: Outcomes
+      - heading "Outcomes" [level=2] [ref=f9e153]
+      - generic [ref=f9e154]:
+        - img "Outcomes 1" [ref=f9e155]
+        - img "Outcomes 2" [ref=f9e156]
+        - img "Outcomes 3" [ref=f9e157]
+    - generic [ref=f9e158]:
+      - heading "Retrospective" [level=2] [ref=f9e160]
+      - generic [ref=f9e161]:
+        - generic [ref=f9e162]:
+          - heading "What I would do differently" [level=3] [ref=f9e163]
+          - paragraph [ref=f9e164]: I would conduct more frequent usability testing with busy professionals to better validate time-saving features, also prototype and test the payment flow earlier to identify and resolve transaction-related friction points.
+        - generic [ref=f9e166]:
+          - heading "Lessons" [level=3] [ref=f9e167]
+          - paragraph [ref=f9e168]: Throughout the design process, I learned that initial concepts are only a starting point. User research, usability testing, and continuous feedback played a critical role in shaping stronger, more inclusive solutions. The process reinforced that iteration is ongoing, and meaningful improvements emerge through repeated testing and refinement.
+        - generic [ref=f9e170]:
+          - heading "Tradeoffs" [level=3] [ref=f9e171]
+          - paragraph [ref=f9e172]: Balancing speed of ordering with rich meal information, automation with user control, and visual appeal with accessibility kept the experience quick, inclusive, and trustworthy.
+  - contentinfo [ref=f9e173]:
+    - generic [ref=f9e174]:
+      - navigation "Footer" [ref=f9e175]:
+        - link "Home" [ref=f9e176] [cursor=pointer]:
+          - /url: index.html
+        - link "Projects" [ref=f9e177] [cursor=pointer]:
+          - /url: projects.html
+        - link "Contact me" [ref=f9e178] [cursor=pointer]:
+          - /url: contact-me.html
+      - generic [ref=f9e179]:
+        - heading "Get in touch" [level=2] [ref=f9e180]
+        - paragraph [ref=f9e181]: Feel free to reach out if you want to have a chat, or have any questions
+        - link "Contact me" [ref=f9e182] [cursor=pointer]:
+          - /url: contact-me.html
+      - generic [ref=f9e183]: Copyright © 2025 Evbota Franklin. All rights reserved.

@@ -1,0 +1,117 @@
+- generic [ref=f28e1]:
+  - link "Skip to main content" [ref=f28e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f28e3]:
+    - generic [ref=f28e4]:
+      - link "fe." [ref=f28e5] [cursor=pointer]:
+        - /url: index.html
+      - button "Open menu" [ref=f28e6] [cursor=pointer]
+  - main [ref=f28e10]:
+    - generic [ref=f28e16]:
+      - heading "Hi, I'm Frank." [level=1] [ref=f28e17]
+      - paragraph [ref=f28e18]: As a Product Designer, I craft polished, meaningful digital experiences that merge creative thinking with practical usability.
+      - link "View My work" [ref=f28e19] [cursor=pointer]:
+        - /url: projects.html
+    - generic [ref=f28e20]:
+      - generic [ref=f28e21]: Projects
+      - heading "Selected work" [level=2] [ref=f28e22]
+      - paragraph [ref=f28e23]: Case studies covering literacy tools, retail platforms, and food delivery for busy professionals.
+      - generic [ref=f28e24]:
+        - link "ReadWell UX Research Native App ReadWell case study" [ref=f28e25] [cursor=pointer]:
+          - /url: case-study-readwell.html
+          - generic [ref=f28e26]:
+            - generic [ref=f28e27]:
+              - heading "ReadWell" [level=3] [ref=f28e28]
+              - generic [ref=f28e29]:
+                - generic [ref=f28e30]: UX Research
+                - generic [ref=f28e31]: Native App
+            - generic [ref=f28e32]: →
+          - img "ReadWell case study" [ref=f28e34]
+        - link "TheShop Cross-platform E-commerce TheShop case study" [ref=f28e35] [cursor=pointer]:
+          - /url: case-study-theshop.html
+          - generic [ref=f28e36]:
+            - generic [ref=f28e37]:
+              - heading "TheShop" [level=3] [ref=f28e38]
+              - generic [ref=f28e39]:
+                - generic [ref=f28e40]: Cross-platform
+                - generic [ref=f28e41]: E-commerce
+            - generic [ref=f28e42]: →
+          - img "TheShop case study" [ref=f28e44]
+        - link "MexiEats Native App Delivery MexiEats case study" [ref=f28e45] [cursor=pointer]:
+          - /url: case-study-mexieats.html
+          - generic [ref=f28e46]:
+            - generic [ref=f28e47]:
+              - heading "MexiEats" [level=3] [ref=f28e48]
+              - generic [ref=f28e49]:
+                - generic [ref=f28e50]: Native App
+                - generic [ref=f28e51]: Delivery
+            - generic [ref=f28e52]: →
+          - img "MexiEats case study" [ref=f28e54]
+        - link "View all projects" [ref=f28e56] [cursor=pointer]:
+          - /url: projects.html
+    - generic [ref=f28e57]:
+      - generic [ref=f28e58]: About
+      - generic [ref=f28e59]:
+        - generic [ref=f28e60]:
+          - heading "Designing products people understand and enjoy using." [level=2] [ref=f28e61]
+          - paragraph [ref=f28e62]: I work end-to-end across strategy, research, UI, and delivery. turning ambiguous problems into clear flows, sharp interfaces, and measurable outcomes.
+          - paragraph [ref=f28e63]: My practice blends creative thinking with practical usability so every screen earns its place and every interaction feels intentional.
+          - generic [ref=f28e64]:
+            - generic [ref=f28e65]:
+              - strong [ref=f28e66]: "3"
+              - generic [ref=f28e67]: Featured case studies
+            - generic [ref=f28e68]:
+              - strong [ref=f28e69]: 100%
+              - generic [ref=f28e70]: End-to-end ownership
+            - generic [ref=f28e71]:
+              - strong [ref=f28e72]: UX → UI
+              - generic [ref=f28e73]: Research to ship
+        - img "Product design work sample" [ref=f28e75]
+    - generic [ref=f28e76]:
+      - generic [ref=f28e77]:
+        - generic [ref=f28e78]: What I do
+        - heading "From problem framing to polished product." [level=2] [ref=f28e79]
+        - paragraph [ref=f28e80]: Strategy, design, and development thinking applied as one product practice.
+      - generic [ref=f28e81]:
+        - generic [ref=f28e82]:
+          - generic [ref=f28e83]: "01"
+          - generic [ref=f28e84]:
+            - heading "Strategy" [level=3] [ref=f28e85]
+            - paragraph [ref=f28e86]: Planning thoughtful digital solutions grounded in user and business goals.
+          - generic [ref=f28e87]:
+            - generic [ref=f28e88]: Research
+            - generic [ref=f28e89]: Roadmaps
+            - generic [ref=f28e90]: IA
+        - generic [ref=f28e91]:
+          - generic [ref=f28e92]: "02"
+          - generic [ref=f28e93]:
+            - heading "Design" [level=3] [ref=f28e94]
+            - paragraph [ref=f28e95]: Creating beautiful and intuitive user interfaces that feel effortless.
+          - generic [ref=f28e96]:
+            - generic [ref=f28e97]: UI/UX
+            - generic [ref=f28e98]: Design systems
+            - generic [ref=f28e99]: Prototypes
+        - generic [ref=f28e100]:
+          - generic [ref=f28e101]: "03"
+          - generic [ref=f28e102]:
+            - heading "Development" [level=3] [ref=f28e103]
+            - paragraph [ref=f28e104]: Building robust and scalable applications with designers in the loop.
+          - generic [ref=f28e105]:
+            - generic [ref=f28e106]: Web
+            - generic [ref=f28e107]: Native app
+            - generic [ref=f28e108]: Handoff
+  - contentinfo [ref=f28e109]:
+    - generic [ref=f28e110]:
+      - navigation "Footer" [ref=f28e111]:
+        - link "Home" [ref=f28e112] [cursor=pointer]:
+          - /url: index.html
+        - link "Projects" [ref=f28e113] [cursor=pointer]:
+          - /url: projects.html
+        - link "Contact me" [ref=f28e114] [cursor=pointer]:
+          - /url: contact-me.html
+      - generic [ref=f28e115]:
+        - heading "Get in touch" [level=2] [ref=f28e116]
+        - paragraph [ref=f28e117]: Feel free to reach out if you want to have a chat, or have any questions
+        - link "Contact me" [ref=f28e118] [cursor=pointer]:
+          - /url: contact-me.html
+      - generic [ref=f28e119]: Copyright © 2025 Evbota Franklin. All rights reserved.
