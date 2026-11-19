@@ -91,30 +91,15 @@
     var header = document.querySelector(".fe-header");
     if (!header) return;
 
-    // Always reset inline transform on initialization to prevent
-    // leftover styles from previous page scroll state
+    // Keep the sticky header visible regardless of the previous scroll state.
     header.style.transform = "";
     header.classList.remove("is-scrolled");
 
-    var lastY = window.scrollY;
     var ticking = false;
 
     function update() {
       var y = window.scrollY;
       header.classList.toggle("is-scrolled", y > 24);
-
-      // Hide on scroll down past 240px, show on scroll up (desktop feel)
-      if (!reduceMotion && window.innerWidth > 900) {
-        if (y > 240 && y > lastY + 4) {
-          header.style.transform = "translateY(-100%)";
-        } else if (y < lastY - 4 || y <= 240) {
-          header.style.transform = "translateY(0)";
-        }
-      } else {
-        header.style.transform = "";
-      }
-
-      lastY = y;
       ticking = false;
     }
 
@@ -125,8 +110,7 @@
       }
     }
 
-    // Determines header scrolled state (hide/show on scroll)
-    // Header is always dark theme — no light/dark switching
+    // The header stays sticky; only its scrolled appearance changes.
 
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onScroll, { passive: true });

@@ -10,6 +10,12 @@
       content="Frank Evbota — Product Designer crafting polished, meaningful digital experiences."
     />
     <link rel="icon" href="assets/images/icons/favicon-light.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Lato:wght@400;700&amp;display=swap"
+    />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/brand.css" />
@@ -38,9 +44,11 @@
         <div class="fe-hero__bg">
           <img
             class="fe-hero__photo"
-            src="assets/images/hero-img.jpg"
+            src="assets/images/hero-img.webp"
             alt=""
             aria-hidden="true"
+            fetchpriority="high"
+            decoding="async"
           />
         </div>
         <div class="fe-hero__content">
@@ -70,7 +78,7 @@
               <span class="fe-project__arrow" aria-hidden="true">→</span>
             </div>
             <div class="fe-project__media">
-              <img src="assets/images/projects/readwell-thumb.png" alt="ReadWell case study" width="3408" height="2430" loading="lazy" />
+              <img src="assets/images/projects/readwell-thumb.webp" alt="ReadWell case study" width="3408" height="2430" loading="lazy" decoding="async" / decoding="async">
             </div>
             <p class="fe-project__desc">
               The READ WELL tool is designed to help adults learn how to read for
@@ -86,7 +94,7 @@
               <span class="fe-project__arrow" aria-hidden="true">→</span>
             </div>
             <div class="fe-project__media">
-              <img src="assets/images/projects/theshop-thumb.png" alt="TheShop case study" width="3408" height="1980" loading="lazy" />
+              <img src="assets/images/projects/theshop-thumb.webp" alt="TheShop case study" width="3408" height="1980" loading="lazy" decoding="async" / decoding="async">
             </div>
             <p class="fe-project__desc">
               An online retail platform that offers a diverse array of products
@@ -102,7 +110,7 @@
               <span class="fe-project__arrow" aria-hidden="true">→</span>
             </div>
             <div class="fe-project__media">
-              <img src="assets/images/projects/mexieats-thumb.png" alt="MexiEats case study" width="3408" height="2286" loading="lazy" />
+              <img src="assets/images/projects/mexieats-thumb.webp" alt="MexiEats case study" width="3408" height="2286" loading="lazy" decoding="async" / decoding="async">
             </div>
             <p class="fe-project__desc">
               A Mexican food ordering and delivery app for busy professionals to
@@ -149,12 +157,11 @@
           </div>
           <div class="fe-about__media" data-parallax="0.08">
             <img
-              src="assets/images/about-thumb.png"
+              src="assets/images/about-thumb.webp"
               alt="Product design work sample"
               width="3408"
               height="2430"
-              loading="lazy"
-            />
+              loading="lazy" decoding="async" / decoding="async">
           </div>
         </div>
       </section>

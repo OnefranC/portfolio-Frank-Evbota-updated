@@ -101,12 +101,11 @@
 
    ================================== Css table of contents End======================================== */
 /* Font Family*/
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Phudu:wght@300..900&display=swap");
 /* ========================= Variable Css Start ======================== */
 :root {
   /* Font Family Variable */
   --heading-font: "Phudu", sans-serif;
-  --body-font: "Instrument Sans", sans-serif;
+  --body-font: "Inter", "Manrope", system-ui, sans-serif;
   /* Font Size Variable Start */
   --heading-one: clamp(2rem, -0.0733rem + 6.3692vw, 4.25rem);
   --heading-two: clamp(1.75rem, 0.7133rem + 2.8846vw, 2.875rem);
