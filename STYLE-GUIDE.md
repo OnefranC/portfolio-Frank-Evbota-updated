@@ -134,7 +134,9 @@ JS-driven motion must check
 
 ## 5. Assets
 
-- Images: `.png` for product screens and case-study media.
+- Pages use resized, compressed `.webp` delivery variants for large raster
+  images; keep the original PNG/JPEG sources for editing and archive pages.
+- Small raster images and vector icons may stay in their original format.
 - Filenames: lowercase, hyphen-separated, prefixed with the project slug
   (`readwell-`, `theshop-`, `me-` for MexiEats).
 - Spaces in filenames are allowed (they appear URL-encoded as `%20` in

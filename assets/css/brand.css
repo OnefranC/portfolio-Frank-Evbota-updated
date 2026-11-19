@@ -23,13 +23,6 @@ html {
   overflow-x: hidden;
 }
 
-/* Keep scrollbar gutter stable across pages so nav links and all centered
-   content never shift left/right when switching between a short page
-   (no scrollbar) and a long page (scrollbar present). */
-body {
-  overflow-x: hidden;
-}
-
 body {
   font-family: var(--fe-font);
   color: var(--fe-ink);
@@ -666,11 +659,11 @@ main {
   grid-template-columns: 64px 1fr auto;
   gap: 24px;
   align-items: start;
-  padding: 16px 100px;
+  padding: 16px 0;
   border-top: 1px solid var(--fe-line);
   text-decoration: none;
   color: var(--fe-ink);
-  transition: opacity 0.2s ease, background-color 0.2s ease, padding-left 0.25s ease;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
   box-sizing: border-box;
 }
 
@@ -697,7 +690,6 @@ main {
   color: var(--fe-ink);
   opacity: 1;
   background: var(--fe-soft);
-  padding-left: 100px;
 }
 
 .fe-service__num {
@@ -1411,9 +1403,6 @@ main {
   }
   .fe-project:hover .fe-project__media img {
     transform: none;
-  }
-  .fe-service:hover {
-    padding-left: 0;
   }
 }
 
@@ -4197,7 +4186,7 @@ main .fe-cta .fe-btn {
     width: 100% !important;
     max-width: 100% !important;
     overflow: hidden !important;
-    padding: 20px 16px !important; /* fill container on narrow screens (360px min) */
+    padding: 20px 0 !important;
   }
   .fe-service__num,
   .fe-service h3,
@@ -4228,8 +4217,6 @@ main .fe-cta .fe-btn {
    Text-align left on all pages. */
 @media (max-width: 600px) {
   .fe-services {
-    margin-left: 16px;
-    margin-right: 16px;
     padding: 0 !important;
   }
   .fe-services__list {
@@ -7586,5 +7573,23 @@ main > .fe-about-section .fe-about {
     flex-direction: column;
     justify-content: center;
     padding-left: 0;
+  }
+}
+
+/* Give the mobile What I do section one outer 16px gutter; keep contents flush. */
+@media (max-width: 600px) {
+  main > .fe-services {
+    width: calc(100% - 32px) !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  main > .fe-services > .fe-section,
+  main > .fe-services > .fe-services__list {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
