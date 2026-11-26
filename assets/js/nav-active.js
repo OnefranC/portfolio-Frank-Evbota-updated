@@ -51,7 +51,7 @@
     var hrefFile = hrefPath.split('/').pop();
     if (currentFile === hrefFile) return true;
     // Treat a directory-style href ("/") as the index file.
-    if ((hrefPath === '/' || hrefPath === '') && (currentFile === '' || currentFile === 'index.html')) {
+    if ((hrefPath === '/' || hrefPath === '') && (currentFile === '' || currentFile === 'Home.html')) {
       return true;
     }
     return false;

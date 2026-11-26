@@ -17,7 +17,7 @@ Two coexisting visual registers:
 
 | Register | Where | Character |
 |---|---|---|
-| **Brand (home)** | `index.html`, `projects.html`, `contact-me.html` | Manrope/Inter, near-black ink on white, pill buttons, rounded 20px surfaces, 3D parallax hero |
+| **Brand (home)** | `Home.html`, `projects.html`, `contact-me.html` | Manrope/Inter, near-black ink on white, pill buttons, rounded 20px surfaces, 3D parallax hero |
 | **Case fidelity** | `case-study-*.html` | Lato, `#253746` shell text, flat square corners, centred chapter titles — reproduces the original Framer export |
 
 Case studies deliberately keep the original Framer typography so the work
@@ -159,7 +159,7 @@ Mobile-specific behaviour:
 ## 8. File Map
 
 ```
-index.html                    Home
+Home.html                     Home
 projects.html                 Portfolio index
 contact-me.html               Contact + form
 case-study-*.html             Three case studies

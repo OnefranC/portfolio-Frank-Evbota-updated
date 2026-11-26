@@ -11,7 +11,7 @@ as-is.
 
 ## Project Structure
 
-- `index.html`: Homepage — hero, about details, services summary, featured work.
+- `Home.html`: Homepage — hero, about details, services summary, featured work.
 - `projects.html`: Portfolio overview of the three case studies.
 - `contact-me.html`: Contact page with direct links and a working form.
 - `case-study-readwell.html`: ReadWell — adult literacy learning app.
