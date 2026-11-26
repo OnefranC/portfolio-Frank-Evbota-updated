@@ -19,3 +19,6 @@ Tooling scratch dirs
 .serena/
 .remember/
 .abacusai-bot/
+
+# Dependencies
+node_modules/

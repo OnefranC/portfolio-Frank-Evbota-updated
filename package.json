@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-frank-evbota",
+  "version": "1.0.0",
+  "description": "Product design portfolio website for Frank Evbota",
+  "type": "module",
+  "scripts": {
+    "dev": "python -m http.server 8765 --bind 127.0.0.1",
+    "lint": "echo 'No linter configured for vanilla HTML/CSS/JS project'"
+  },
+  "keywords": ["portfolio", "design", "product-design"],
+  "author": "Frank Evbota",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
