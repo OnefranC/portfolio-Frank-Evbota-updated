@@ -38,12 +38,19 @@ body {
 }
 
 /* —— Header —— */
+/* One fixed pixel height for the header at every breakpoint and on every
+   page, including the scrolled ("is-scrolled") state. Previously the inner
+   padding changed (18px -> 12px) once a page was scrolled, and because each
+   page loads at its own scroll offset the nav links appeared to jump to a
+   different vertical position as you moved between pages. */
 .fe-header {
+  --fe-header-h: 69px;
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
+  height: var(--fe-header-h);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   background: rgba(255, 255, 255, 0.82);
@@ -64,6 +71,7 @@ body {
   justify-content: space-between;
   gap: 24px;
   position: relative;
+  height: 100%;
 }
 
 @media (min-width: 601px) and (max-width: 960px) {
@@ -1535,15 +1543,16 @@ main {
   }
 }
 
-/* Header compress on scroll */
+/* Header: fixed height at every breakpoint; the scrolled state only changes
+   the shadow so the logo/nav never shift vertically between pages. */
 .fe-header.is-scrolled {
   padding: 0;
   box-shadow: 0 8px 28px rgba(18, 21, 21, 0.06);
 }
 
 .fe-header.is-scrolled .fe-header__inner {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 /* Media reveal */
